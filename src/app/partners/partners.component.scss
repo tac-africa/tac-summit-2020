@@ -1,0 +1,24 @@
+.summit-partners {
+  &__primary-title {
+    text-align: center;
+    margin-top: 50px;
+
+    :first-child {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.5em;
+      color: #00285B;
+      margin-bottom: 2px;
+    }
+
+    :last-child {
+      max-width: 597px;
+      margin: 0 auto;
+      margin-bottom: 0px;
+      color: #8D8F9C;
+      line-height: 1.2em;
+      font-size: 1.3em;
+      margin-bottom: 25px;
+    }
+  }
+}
