@@ -3,24 +3,28 @@
 
 .summit-header {
   &__img {
-    min-height: 748px;
-    max-height: 833px;
+    min-height: 815px;
+    max-height: 870px;
     width: 100%;
-    height: 100px;
+    height: 95vh;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url('../../assets/img/header-nav.png');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
+    url('../../assets/img/header-nav.png') center center no-repeat;
     position: relative;
   }
 }
 
 .summit-header-info {
   position: absolute;
-  top: 150px;
+  top: 206px;
   padding: 0 150px;
   font-weight: bold;
   user-select: none;
+  text-align: center;
+  width: 100%;
 
   &__main {
     color: #ffd7a4;
@@ -95,7 +99,7 @@
     background-color: $secondary-main-color;
     max-width: 279px;
     margin: 0 auto;
-    height: 170px;
+    height: 100%;
     margin-top: 15px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -104,6 +108,13 @@
         font-size: .9em;
         margin-top: 23px;
         line-height: 1.2;
+    }
+
+    &__details {
+      font-size: .9em;
+      margin-top: 10px;
+      line-height: 1.2;
+      color: rgba(255, 255, 255, 0.65);
     }
 }
 

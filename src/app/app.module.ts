@@ -3,12 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './shared/nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { SubjectMattersComponent } from './subject-matters/subject-matters.component';
-import { StructureComponent } from './structure/structure.component';
-import { PartnersComponent } from './partners/partners.component';
-import { FooterComponent } from './footer/footer.component';
+import { SubjectMattersComponent } from './home/subject-matters/subject-matters.component';
+import { PartnersComponent } from './home/partners/partners.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     HomeComponent,
     SubjectMattersComponent,
-    StructureComponent,
     PartnersComponent,
     FooterComponent
   ],
