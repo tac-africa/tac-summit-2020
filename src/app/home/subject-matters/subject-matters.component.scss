@@ -1,197 +1,67 @@
-@import '../../../styles/abstracts/variables';
-
-.subject-matter-container {
+.subject-matters {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
+    url("../../../assets/img/subject-matters.png");
+  min-height: 400px;
   position: relative;
-  max-height: 1035px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  &__img {
-    min-height: 1900px;
-    max-height: 2000px;
+  &__container {
+    position: absolute;
+    left: 0;
+    top: 50%;
     width: 100%;
-    height: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../../../assets/img/subjectmatters-background.png');
-    position: relative;
-    transform: translatey(-604px);
-    z-index: -1;
-  }
-
-
-  &__title {
+    text-align: center;
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
+    justify-content: space-around;
 
-
-    .primary-title {
+    &__title {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 100px;
-      margin-bottom: 10px;
-      
-      div {
-        width: 30px;
-        height: 4px;
-        background-color: $secondary-main-color;
-      }      
-    }
+      flex-direction: column;
+      margin-bottom: 25px;
+      padding: 5px;
 
 
-    h3 {
-      color: $secondary-main-color;
-      font-size: 1.7em;
-      text-align: center;
-      font-weight: 900;
-      padding: 0 5px;
-    }
+      .primary-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 10px;
 
-    p {
-      max-width: 640px;
-      margin: 0 auto;
-      margin-bottom: 0px;
-      color: #8D8F9C;
-      line-height: 1.2em;
-      font-size: 1.3em;
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-
-  }
-
-  &__main {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-}
-
-.subject-matter-info {
-  margin-top: 20px;
-
-  &__main {
-    border-radius: 50px;
-    background: #043E73;
-    padding: 15px;
-    font-size: 0.8em;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 1.4;
-    min-width: 273px;
-    max-width: 273px;
-    color: #fffdfde6;
-    height: 74px;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    border: 3px solid #e8eaee;
-    cursor: pointer;
-
-  }
-
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-}
-
-.first {
-  transform: translateX(15px);
-}
-
-.last {
-  transform: translateX(-15px);
-}
-
-._svg {
-
-  position: relative;
-  animation: mymove 10s infinite;
-  transition: .5s all;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-@keyframes mymove {
-
-  0% {
-    top: 0px;
-    right: 0px
-  }
-
-  75% {
-    top: -20px;
-
-  }
-
-  100% {
-    top: 0px;
-    right: 0px
-  }
-}
-
-
-@media (max-width: $breakpoint-md) {
-  .first {
-    transform: translateX(70px);
-  }
-
-  .last {
-    transform: translateX(-70px);
-  }
-
-}
-
-@media (max-width: $breakpoint-sm) {
-    .first {
-      transform: translateX(86px);
-    }
-
-    .last {
-      transform: translateX(-86px);
-    }
-  .subject-matter-info {
-    &__main {
-      min-width: 215px;
-      max-width: 215px;
-    }
-  }
-
-  .subject-matter-container {
-
-    &__title {
-      p {
-        font-size: .9em;
+        div {
+          width: 30px;
+          height: 4px;
+          background-color: white;
+        }
       }
-    }
-  }
 
-}
 
-@media (max-width: $breakpoint-xsm) {
-  .subject-matter-info {
-    &__main {
-      min-width: 180px;
-      max-width: 180px;
-    }
-  }
+      h3 {
+        color: white;
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: 900;
+        padding: 0 5px;
+      }
 
-}
+      p {
+        max-width: 640px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        color: #8D8F9C;
+        line-height: 1.2em;
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 15px;
+      }
 
-@media (max-width: $breakpoint-xsm) {
-  .subject-matter-info {
-    &__main {
-      min-width: 165px;
-      max-width: 165px;
+
     }
   }
 

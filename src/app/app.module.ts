@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { SubjectMattersComponent } from './home/subject-matters/subject-matters.component';
 import { PartnersComponent } from './home/partners/partners.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { SlashDetailsComponent } from './home/slash-details/slash-details.component';
+import { CoCreationGroupComponent } from './home/co-creation-group/co-creation-group.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomeComponent,
     SubjectMattersComponent,
     PartnersComponent,
-    FooterComponent
+    FooterComponent,
+    SlashDetailsComponent,
+    CoCreationGroupComponent
   ],
   imports: [
     BrowserModule,

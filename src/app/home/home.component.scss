@@ -32,7 +32,7 @@
 
       #logo {
         align-self: center;
-        margin-top: 9em;
+        margin-top: 150px;
         height: 220px;
         width: 100%;
         margin-bottom: 40px;
@@ -272,6 +272,7 @@
 .summit-header-host {
   text-align: center;
   margin-bottom: 49px;
+  margin-top: 88px;
 
   :first-child {
     margin-top: 1em;
@@ -293,28 +294,74 @@
 }
 
 .summit-header-host-card {
-  padding: 15px;
+  position: relative;
+  padding: 20px;
   border-radius: 20px;
-  color: #ffffff;
-  background-color: $secondary-main-color;
-  max-width: 279px;
+  color: black;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.15);
+  max-width: 370px;
   margin: 0 auto;
   height: 100%;
   margin-top: 15px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  min-height: 314px;
 
   &__title {
-    font-size: 0.9em;
-    margin-top: 23px;
-    line-height: 1.2;
+    font-size: 1.2em;
+    font-weight: bold;
+    max-width: 220px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 30px;
   }
 
   &__details {
-    font-size: 0.9em;
-    margin-top: 10px;
-    line-height: 1.2;
-    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8em;
+    margin-top: 15px;
+    line-height: 1.05;
+    min-height: 80.6px;
+    color: #180F0FA3;
+  }
+
+  a {
+    text-decoration: none;
+
+    button {
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      color: black;
+      transition: 0.5s ease-in-out;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.9em;
+      padding: 7px 17px;
+      font-weight: bold;
+      margin-top: 15px;
+      outline: none;
+
+      &:hover,
+      &:after,
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #DBD0D0;
+    border-radius: 50%;
+    padding: 5px;
+
+    p {
+      padding: 0px 4px;
+      color: #DBD0D0;
+    }
   }
 }
 
