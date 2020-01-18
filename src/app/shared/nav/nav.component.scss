@@ -1,27 +1,26 @@
 @import '../../../styles/abstracts/variables';
 
 .sponsor-navbutton {
-  border-color: transparent;
-  border: 5px solid black;
+  border: 1px solid goldenrod !important;
   border-radius: 30px;
-  color: black;
+  color: white;
+  border-color: transparent;
   transition: .3s ease-in-out;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  font-weight: bold;
   margin-left: 2em;
+  padding: 7px 24px;
 
 
   &:hover,
   &:after,
   &:focus {
-    background-color: $secondary-main-color;
+    background-color: goldenrod;
     color: white;
   }
 }
 
 .nav-item {
-  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin-left: 10px;
@@ -30,4 +29,17 @@
 
 .navbar-collapse {
   justify-content: right;
+}
+
+
+//Boostrap styling
+.navbar-light .navbar-nav .nav-link {
+ color: white;
+}
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: goldenrod;
 }
