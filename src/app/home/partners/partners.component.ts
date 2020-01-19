@@ -53,28 +53,33 @@ export class PartnersComponent implements OnInit {
   images = [
     {
       id: 1,
-      text: "Everfresh Flowers",
+      text: "Institute Of Drone Technology Australia",
       image: this.itdt,
+      link: "https://www.dronetechinstitute.com/",
     },
     {
       id: 2,
-      text: "Festive Deer",
+      text: "Drone Alert",
       image: this.droneAlert,
+      link: "https://www.drone-detectives.com/",
     },
     {
       id: 3,
-      text: "Morning Greens",
+      text: "New Age Aerial",
       image: this.newAerial,
+      link: "https://newageaerial.com/"
     },
     {
       id: 4,
-      text: "Bunch of Love",
+      text: "Grey Hare Media",
       image: this.greyHare,
+      link: "https://greyharemedia.com/",
     },
     {
       id: 5,
-      text: "Blue Clear",
+      text: "Daniels Security",
       image: this.danielsSecurity,
+      link: "https://daniels-security.com/",
     },
   ]
 

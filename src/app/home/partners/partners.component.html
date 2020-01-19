@@ -1,5 +1,5 @@
 <section>
-  <div>
+  <div class="summit-partners">
     <div class="summit-partners__primary-title">
       <p>OUR PARTNERS</p>
       <P>Our Partners are organizations with specific Drone and Counter-Drone systems Expertise which are invited by
@@ -11,7 +11,9 @@
       <owl-carousel-o [options]="customOptions">
 
         <ng-template carouselSlide *ngFor="let image of images" [id]="image.id">
-          <img [src]="image.image" [alt]="image.text" [title]="image.text">
+          <a [href]="image.link">
+            <img [src]="image.image" [alt]="image.text" [title]="image.text">
+        </a>
         </ng-template>
 
       </owl-carousel-o>
