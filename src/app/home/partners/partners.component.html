@@ -1,0 +1,25 @@
+<section>
+  <div class="summit-partners">
+    <div class="summit-partners__primary-title">
+      <p>OUR PARTNERS</p>
+      <P>Our Partners are organizations with specific Drone and Counter-Drone systems Expertise which are invited by
+        the TAC Africa Summit Secretariat to participate in the initiative.
+      </P>
+    </div>
+
+    <div class="container">
+      <owl-carousel-o [options]="customOptions">
+
+        <ng-template carouselSlide *ngFor="let image of images" [id]="image.id">
+          <a [href]="image.link">
+            <img [src]="image.image" [alt]="image.text" [title]="image.text">
+        </a>
+        </ng-template>
+
+      </owl-carousel-o>
+    </div>
+
+  </div>
+
+
+</section>
