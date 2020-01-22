@@ -34,7 +34,7 @@
 
 //Boostrap styling
 .navbar-light .navbar-nav .nav-link {
- color: white;
+  color: white;
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
@@ -42,4 +42,29 @@
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: goldenrod;
+}
+
+.icon-bar {
+  border: none;
+  color: white;
+  background: white;
+  height: 3px;
+  width: 20px;
+  border-radius: 1px;
+  cursor: pointer;
+  display: block;
+  margin: 5px;
+  transition: all 0.2s ease-out;
+}
+
+.top-bar {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.middle-bar {
+  opacity: 0;
+}
+
+.bottom-bar {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
