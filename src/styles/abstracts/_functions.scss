@@ -1,0 +1,9 @@
+@import "../../styles/abstracts/variables";
+
+
+
+@media (max-width: $breakpoint-xsm) {
+    .main-top-container {
+      padding: 0 7vw;
+    }
+}
