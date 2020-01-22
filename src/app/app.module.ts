@@ -9,11 +9,12 @@ import { HomeComponent } from './home/home.component';
 import { SubjectMattersComponent } from './home/subject-matters/subject-matters.component';
 import { PartnersComponent } from './home/partners/partners.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { SlashDetailsComponent } from './home/slash-details/slash-details.component';
 import { CoCreationGroupComponent } from './home/co-creation-group/co-creation-group.component';
 
 // Import your library
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AboutComponent } from './about/about.component';
+import { SlashDetailsComponent } from './shared/slash-details/slash-details.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FooterComponent,
     SlashDetailsComponent,
     CoCreationGroupComponent,
+    AboutComponent,
     
   ],
   imports: [
