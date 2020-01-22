@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +26,6 @@ export class HomeComponent implements AfterViewInit {
     this.logo.forEach((link, index) => {
       if (link.nativeElement.style.animation) {        link.nativeElement.style.animation = '';
       } else {
-        console.log("testing")
         link.nativeElement.style.animation = `lineMove 1.2s ease-in-out forwards ${index / 8 + 0.3}s`;
       }
     })
