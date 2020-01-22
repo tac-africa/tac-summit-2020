@@ -28,9 +28,18 @@
 
     .svg {
       align-self: center;
+      text-align: center;
       background: white;
-      padding: 10px 20px;
+      padding: 10px 5px;
       border-radius: 50%;
+      height: 50px;
+      width: 50px;
+
+      i {
+        font-size: 30px;
+        font-weight: bold;
+        color: slateblue;
+      }
     }
 
     .main-details {
@@ -55,15 +64,16 @@
 @media (max-width: $breakpoint-lg) {
   .slash-details {
     min-height: 600px;
-    
+
     &__container {
-        flex-direction: column;
-        top: 17%;
+      flex-direction: column;
+      top: 17%;
     }
 
     &__main {
-        margin: 0 auto;
-        margin-top: 33px;
+      margin: 0 auto;
+      margin-top: 33px;
+      margin-bottom: 20px;
     }
   }
 }
