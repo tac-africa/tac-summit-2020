@@ -17,15 +17,14 @@ export class HomeComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
+    
     this.titleSvg.nativeElement.classList.toggle('active');
     this.line1.nativeElement.classList.toggle('line_one_active');
     this.line2.nativeElement.classList.toggle('line_two_active');
 
     //animate
     this.logo.forEach((link, index) => {
-      if (link.nativeElement.style.animation) {
-        console.log('Silvas')
-        link.nativeElement.style.animation = '';
+      if (link.nativeElement.style.animation) {        link.nativeElement.style.animation = '';
       } else {
         console.log("testing")
         link.nativeElement.style.animation = `lineMove 1.2s ease-in-out forwards ${index / 8 + 0.3}s`;
@@ -33,7 +32,7 @@ export class HomeComponent implements AfterViewInit {
     })
 
     document.getElementById('date').innerHTML =
-      `Abuja, Nigeria/ date/ #TACsummit2020`;
+      `#TACAfricasummit2020`;
     }    
 
 }

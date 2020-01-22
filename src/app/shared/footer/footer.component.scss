@@ -1,42 +1,56 @@
-.summit-footer {
-  color: white;
-  position: relative;
+@import "../../../styles/abstracts/variables";
 
-  &__img {
-    min-height: 500px;
-    max-height: 500px;
-    width: 100%;
-    height: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url('../../../assets/img/summit-footer.png');
-    z-index: -1;
-  }
+.summit-footer {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
+    url("../../../assets/img/footer.png");
+  min-height: 522px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__main {
     position: absolute;
-    bottom: 10px; 
+    top: 140px;
+    left: 0;
     width: 100%;
-
-    .row {
-        width: 100%;
-        margin-bottom: 10px;
-        :last-child {
-            h3 {
-                font-size: 1.7em;
-                font-weight: bold;
-                margin-bottom: 35px;
-            }
-        }
-    }
-
+    text-align: center;
+    color: white;
   }
 }
 
-.footer-inner-container{
-    max-width: 500px;
+.footer-inner {
+  margin: 0 auto;
+
+  &__img {
+    max-width: 356px;
     margin: 0 auto;
+  }
+
+  &__socials {
+    margin-top: 50px;
+  }
+
+  &__menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    margin-top: 50px;
+    color: #ffffff6e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .contact-fa-container {
@@ -45,16 +59,14 @@
   text-align: center;
 
   i {
-    font-size: 50px;
+    font-size: 30px;
     margin-right: 10px;
     min-width: 52px;
   }
-
-  p {
-    font-size: 1.3em;
-  }
 }
 
+
+// fa fa style for social
 ul.social-network {
   list-style: none;
   display: inline;
@@ -115,7 +127,7 @@ a.socialIcon:hover,
   text-align: center;
   width: 50px;
   height: 50px;
-  font-size: 20px;
+  font-size: 2.2em;
 }
 
 .social-circle li i {
@@ -144,4 +156,21 @@ a.socialIcon:hover,
   -o-transition: all 0.8s;
   -ms-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+
+@media (max-width: $breakpoint-md) {
+
+  .footer-inner {
+    &__copyright {
+      flex-direction: column;
+    }
+  }
+
+  .summit-footer {
+    &__main {
+      top: 122px;
+    }
+  }
+
 }

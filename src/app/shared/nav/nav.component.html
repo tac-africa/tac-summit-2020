@@ -1,4 +1,4 @@
-<nav style="background-color: transparent;" class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
+<nav style="transition: .7s all;" [style.background]="isShow ? 'black' : 'transparent'" class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/"><img src="../../assets/img/logo.png" height="50" alt="logo" srcset=""> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -19,7 +19,7 @@
                     <a class="nav-link" href="#">Registration</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-success sponsor-navbutton my-2 my-sm-0" type="submit">Become A
+            <button class="btn sponsor-navbutton my-2 my-sm-0" type="submit">Become A
               Sponsor</button>
         </div>        
     </div>
