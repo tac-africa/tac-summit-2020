@@ -27,18 +27,20 @@
     display: flex;
 
     .svg {
-      align-self: center;
-      text-align: center;
+
       background: white;
       padding: 10px 5px;
       border-radius: 50%;
-      height: 50px;
-      width: 50px;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       i {
-        font-size: 30px;
+        font-size: 2.9em;
         font-weight: bold;
-        color: slateblue;
+        color: #00285b;
       }
     }
 
@@ -53,7 +55,7 @@
 
       :last-child {
         margin-top: 10px;
-        max-width: 108px;
+        width: 105px;
         line-height: 1.3;
       }
     }
