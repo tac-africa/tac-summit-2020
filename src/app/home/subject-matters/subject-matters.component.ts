@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-subject-matters',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subject-matters.component.scss']
 })
 export class SubjectMattersComponent implements OnInit {
+  @ViewChild('myModal', { static: false }) myModal: ElementRef;
+  @ViewChild('close', { static: false }) close: ElementRef;
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openClick() {
+    this.myModal.nativeElement.style.display = "block";
+    console.log('working')
   }
 
 }

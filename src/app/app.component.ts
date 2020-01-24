@@ -21,12 +21,14 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.metaTagService.addTags([
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@alligatorio' },
-      { name: 'twitter:creator', content: '@blazetech' },
+      { name: 'twitter:site', content: '@tacafrica' },
+      { name: 'twitter:title', content: 'TAC Africa Drone & Counter Drone Summit' },
+      { name: 'twitter:description', content: 'TAC Africa Drone  Summit     The proposed TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
+      { name: 'twitter:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png" },
       { name: 'og:url', content: 'https://summit.tacafrica.org' },
       { name: 'og:title', content: 'TAC Africa Drone & Counter Drone Summit' },
       { name: 'og:description', content: 'TAC Africa Drone  Summit     The proposed TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
-      { name: 'og:image', content: this.logo },
+      { name: 'og:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png"},
     ]);
   }
 }
