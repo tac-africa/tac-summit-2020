@@ -27,6 +27,17 @@
   outline: none;
 }
 
+@media screen and (max-width: 990px) {
+  .nav-item {
+    margin-bottom: 1em !important;
+  }
+
+  .sponsor-navbutton {
+    margin-left: 0;
+    margin-bottom: 1em !important;
+  }
+}
+
 .navbar-collapse {
   justify-content: flex-end;
 }
