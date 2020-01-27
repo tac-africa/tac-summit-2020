@@ -498,7 +498,7 @@
 
 
 @media (max-width: $breakpoint-sm) {
-    .summit-header-info {
+  .summit-header-info {
 
     &__submain {
       button {
@@ -547,3 +547,11 @@
   }
 }
 
+.summit-header-host-card__details {
+  line-height: 19px !important;
+  font-size: 13px;
+}
+
+.summit-header-host-card {
+  height: 370px;
+}
