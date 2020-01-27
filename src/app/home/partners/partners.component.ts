@@ -1,20 +1,17 @@
+import { environment } from './../../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-declare var require: any
 @Component({
   selector: 'app-partners',
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.scss']
 })
 export class PartnersComponent implements OnInit {
-  itdt = require("../../../assets/img/itdt.png");
-  droneAlert = require("../../../assets/img/drone-alert.png");
-  newAerial = require("../../../assets/img/new-aerial.png");
-  greyHare = require("../../../assets/img/grey-hare.png");
-  danielsSecurity = require("../../../assets/img/daniels-security.png");
-
-
-
+  itdt = `${environment.baseURL}/assets/img/itdt.png`;
+  droneAlert = `${environment.baseURL}/assets/img/drone-alert.png`;
+  newAerial = `${environment.baseURL}/assets/img/new-aerial.png`;
+  greyHare = `${environment.baseURL}/assets/img/grey-hare.png`;
+  danielsSecurity = `${environment.baseURL}/assets/img/daniels-security.png`;
 
 
   constructor() { }

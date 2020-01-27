@@ -15,6 +15,7 @@ import { CoCreationGroupComponent } from './home/co-creation-group/co-creation-g
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutComponent } from './about/about.component';
 import { SlashDetailsComponent } from './shared/slash-details/slash-details.component';
+import { HeaderPageNavComponent } from './shared/header-page-nav/header-page-nav.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SlashDetailsComponent } from './shared/slash-details/slash-details.comp
     SlashDetailsComponent,
     CoCreationGroupComponent,
     AboutComponent,
+    HeaderPageNavComponent,
     
   ],
   imports: [

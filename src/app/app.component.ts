@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
-declare var require: any
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -13,22 +12,30 @@ declare var require: any
 })
 export class AppComponent implements OnInit{
   title = 'tacsummit';
-  logo = require("../assets/img/logo.png");
 
   constructor(private metaTagService: Meta) {
   }
 
   ngOnInit() {
     this.metaTagService.addTags([
+      { property: 'name:description', content: 'TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
+      //Facebook Meta Tags
+      { property: 'og:url', content: 'https://summit.tacafrica.org/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'TAC Africa Summit' },
+      { property: 'og:description', content: 'TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
+      { property: 'og:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png" },
+
+      //Twitter Meta Tags
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@tacafrica' },
-      { name: 'twitter:title', content: 'TAC Africa Drone & Counter Drone Summit' },
-      { name: 'twitter:description', content: 'TAC Africa Drone  Summit     The proposed TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
+      { name: 'twitter:title', content: 'TAC Africa Drone Summit' },
+      { name: 'twitter:description', content: 'TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
       { name: 'twitter:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png" },
-      { name: 'og:url', content: 'https://summit.tacafrica.org' },
-      { name: 'og:title', content: 'TAC Africa Drone & Counter Drone Summit' },
-      { name: 'og:description', content: 'TAC Africa Drone  Summit     The proposed TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
-      { name: 'og:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png"},
-    ]);
+
+      //Google / Search Engine Tags
+      { property: 'itemprop:name', content: 'TAC Africa Drone Summit' },
+      { property: 'itemprop:description', content: 'TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
+      { property: 'itemprop:image', content: "https://summit.tacafrica.org/assets/img/meta-logo.png" },
+    ], true);
   }
 }
