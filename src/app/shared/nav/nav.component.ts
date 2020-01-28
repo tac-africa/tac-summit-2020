@@ -10,7 +10,7 @@ export class NavComponent implements AfterViewInit {
   @ViewChild('middle', { static: false }) middle: ElementRef;
   @ViewChild('bottom', { static: false }) bottom: ElementRef;
   isShow: boolean;
-  topPosToStartShowing = 500;
+  topPosToStartShowing = 250;
 
   @HostListener('window:scroll')
   checkScroll() {
