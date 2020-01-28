@@ -218,7 +218,6 @@
                   President/CEO
                   Nigeria.
                 </p>
-                <div class="open-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
             </div>
           </div>
@@ -237,7 +236,6 @@
                   Grey Hare Media Limited,
                   London, United Kingdom
                 </p>
-                <div class="open-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
             </div>
           </div>
@@ -254,7 +252,6 @@
                 <p>CEO, DroneALERT,
                   Estonia & Australia
                 </p>
-                <div class="open-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
             </div>
           </div>
@@ -270,4 +267,26 @@
 <app-subject-matters></app-subject-matters>
 
 <!-- summit partners -->
-<app-partners></app-partners>
+<section>
+  <div class="summit-partners main-top-container">
+    <div class="summit-partners__primary-title">
+      <p>Our Secteriate</p>
+      <P>Our Partners are organizations with specific Drone and Counter-Drone systems Expertise which are invited by
+        the TAC Africa Summit Secretariat to participate in the initiative.
+      </P>
+    </div>
+
+    <div class="container">
+      <owl-carousel-o [options]="customOptions">
+
+        <ng-template carouselSlide *ngFor="let image of images" [id]="image.id">
+          <a [href]="image.link">
+            <img [src]="image.image" [alt]="image.text" [title]="image.text">
+          </a>
+          <p>{{ image.text }}</p>
+        </ng-template>
+
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>

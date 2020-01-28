@@ -1,7 +1,8 @@
 @import '../../styles/abstracts/variables';
 
 .subject-matters {
-  min-height: 760px;
+  min-height: 750px;
+  max-height: 750px;
   height: 90vh;
   position: relative;
   background-attachment: fixed;
@@ -59,9 +60,10 @@
     max-width: 640px;
     margin: 0 auto;
     margin-bottom: 0px;
-    color: #00285b;
-    line-height: 1.08em;
+    color: #8D8F9C;
+    line-height: 1.2em;
     font-size: 1em;
+    max-width: 597px;
     text-align: center;
     margin-bottom: 15px;
   }
@@ -74,7 +76,7 @@
   box-shadow: 4px 4px 10px #00000036;
   border-radius: 15px;
   margin-top: 30px;
-  min-height: 388px;
+  min-height: 366px;
 
 
   &__img {
@@ -137,22 +139,6 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 991px) {
-  .expert-card {
-    min-height: 364px !important;
-
-    &__img {
-      height: 210px !important;
-      width: 210px !important;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-lg) {
-  .subject-matters {
-    min-height: 3680px;
-  }
-}
 
 @media (max-width: $breakpoint-sm) {
   .title {
@@ -206,7 +192,46 @@
   }
 }
 
+.summit-partners {
+  margin: 100px 0;
+
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+
+  img {
+      border-radius: 50%;
+  }
+  
+  &__primary-title {
+    text-align: center;
+
+    :first-child {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.5em;
+      color: #00285B;
+      margin-bottom: 2px;
+    }
+
+    :last-child {
+      max-width: 597px;
+      margin: 0 auto;
+      margin-bottom: 0px;
+      color: #8D8F9C;
+      line-height: 1.2em;
+      font-size: 1em;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+
 @media (max-width: $breakpoint-lg) {
+    .subject-matters {
+        max-height: 1558px !important;
+    }
   .co-creation-lab {
     &__details {
       margin: 0 auto;
