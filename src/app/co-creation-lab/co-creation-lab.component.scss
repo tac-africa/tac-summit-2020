@@ -176,3 +176,52 @@
     }
   }
 }
+
+.co-creation-lab {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__details {
+    max-width: 35em;
+
+    h3 {
+      font-size: 2.5em;
+      font-weight: 900;
+      color: #00285b;
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      font-size: 1.07em;
+      line-height: 1.5;
+
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .co-creation-lab {
+    &__details {
+      margin: 0 auto;
+      text-align: center;
+
+      h3 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: .9em;
+      }
+    }
+
+    &__logo {
+      margin-top: 30px;
+    }
+  }
+}
