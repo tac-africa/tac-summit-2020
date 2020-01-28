@@ -202,6 +202,15 @@
 
   img {
       border-radius: 50%;
+      box-shadow: 1px -2px 3px #0000001f;
+  }
+
+  p {
+      color: #00285b;
+      text-align: center;
+      padding: 10px;
+      font-size: 1em;
+      font-weight: 900;
   }
   
   &__primary-title {

@@ -10,7 +10,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class CoCreationLabComponent implements OnInit {
   title = 'Virtual Co-creation Group'
-  itdt = `${environment.baseURL}/assets/img/aderanti.png`;
+  abdul = `${environment.baseURL}/assets/img/abdul.jpg`;
+  bright = `${environment.baseURL}/assets/img/bright.jpg`;
+  kind = `${environment.baseURL}/assets/img/kind.jpg`;
+  ibrahim = `${environment.baseURL}/assets/img/Ibrahim.jpg`;
+  sylvernus = `${environment.baseURL}/assets/img/sylvernus.jpg`;
 
   constructor() { }
 
@@ -43,38 +47,36 @@ export class CoCreationLabComponent implements OnInit {
       nav: true
     }
 
-
-
     images = [
       {
         id: 1,
-        text: "Aderanti",
-        image: this.itdt,
-        link: "https://www.dronetechinstitute.com/",
+        text: "Abdullazeez Ocheja",
+        image: this.abdul,
+        link: "#",
       },
       {
         id: 2,
-        text: "Aderanti",
-        image: this.itdt,
-        link: "https://www.dronetechinstitute.com/",
+        text: "Bright Lawrence",
+        image: this.bright,
+        link: "#",
       },
       {
         id: 3,
-        text: "Aderanti",
-        image: this.itdt,
-        link: "https://www.dronetechinstitute.com/",
+        text: "Kind Akubo",
+        image: this.kind,
+        link: "#",
       },
       {
         id: 4,
-        text: "Aderanti",
-        image: this.itdt,
-        link: "https://www.dronetechinstitute.com/",
+        text: "Ibrahim Ali",
+        image: this.ibrahim,
+        link: "#",
       },
       {
         id: 5,
-        text: "Aderanti",
-        image: this.itdt,
-        link: "https://www.dronetechinstitute.com/",
+        text: "Sylvernus Akubo",
+        image: this.sylvernus,
+        link: "#",
       },
     ]
 }
