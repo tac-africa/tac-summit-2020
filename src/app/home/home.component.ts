@@ -5,6 +5,7 @@ import { Component, ViewChild, ElementRef, AfterViewInit, ViewChildren, QueryLis
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements AfterViewInit {
   @ViewChild('titleSvg', { static: false }) titleSvg: ElementRef;
   @ViewChild('line1', { static: false }) line1: ElementRef;

@@ -16,6 +16,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutComponent } from './about/about.component';
 import { SlashDetailsComponent } from './shared/slash-details/slash-details.component';
 import { HeaderPageNavComponent } from './shared/header-page-nav/header-page-nav.component';
+import { CoCreationLabComponent } from './co-creation-lab/co-creation-lab.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HeaderPageNavComponent } from './shared/header-page-nav/header-page-nav
     CoCreationGroupComponent,
     AboutComponent,
     HeaderPageNavComponent,
+    CoCreationLabComponent,
     
   ],
   imports: [
