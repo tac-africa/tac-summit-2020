@@ -251,3 +251,95 @@
     }
   }
 }
+
+.organization_committe {
+  padding: 20px;
+
+  h3 {
+    font-weight: bold;
+    color: #00285b;
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 900;
+    padding: 0 5px;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    color: #00285b;
+    line-height: 1.08em;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.card-org-container {
+  padding: 40px;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+
+  .card-org {
+    // margin-left: 5px;
+    margin-bottom: 2em;
+
+    .card-svg-org {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 76px;
+      margin: auto;
+    }
+
+    .card-details-org {
+      h3 {
+        display: flex;
+        font-size: 19px;
+        font-weight: 900;
+        justify-content: center;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-family: lato;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: 20em;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width:558px) {
+  .org {
+    padding: 2em !important;
+  }
+
+  .organization_committe {
+    padding: 0;
+  }
+
+  .card-org-container {
+    padding: 0px;
+
+    .card-details-org {
+      p {
+        font-family: lato;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
