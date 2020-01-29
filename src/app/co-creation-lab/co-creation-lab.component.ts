@@ -27,9 +27,8 @@ export class CoCreationLabComponent implements OnInit {
       mouseDrag: true,
       touchDrag: true,
       pullDrag: false,
-      dots: false,
+      dots: true,
       navSpeed: 700,
-      navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
       responsive: {
         0: {
           items: 1
@@ -44,7 +43,6 @@ export class CoCreationLabComponent implements OnInit {
           items: 4
         }
       },
-      nav: true
     }
 
     images = [

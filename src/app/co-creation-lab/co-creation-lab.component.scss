@@ -201,11 +201,11 @@
   }
 
   img {
-      border-radius: 50%;
-      box-shadow: 1px -2px 3px #0000001f;
+      border-radius: 15px;
+      height: 250px;
   }
 
-  p {
+  .image-title {
       color: #00285b;
       text-align: center;
       padding: 10px;
