@@ -278,7 +278,7 @@
     max-width: 640px;
     margin: 0 auto;
     margin-bottom: 0px;
-    color: #00285b;
+    color: #574311;
     line-height: 1.08em;
     font-size: 1em;
     text-align: center;
@@ -303,6 +303,8 @@
       align-items: center;
       width: 76px;
       margin: auto;
+      min-height: 100px;
+      max-height: 100px;
     }
 
     .card-details-org {
