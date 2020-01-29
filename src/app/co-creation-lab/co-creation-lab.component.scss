@@ -201,18 +201,18 @@
   }
 
   img {
-      border-radius: 15px;
-      height: 250px;
+    border-radius: 15px;
+    height: 250px;
   }
 
   .image-title {
-      color: #00285b;
-      text-align: center;
-      padding: 10px;
-      font-size: 1em;
-      font-weight: 900;
+    color: #00285b;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 900;
   }
-  
+
   &__primary-title {
     text-align: center;
 
@@ -238,9 +238,10 @@
 
 
 @media (max-width: $breakpoint-lg) {
-    .subject-matters {
-        max-height: 1558px !important;
-    }
+  .subject-matters {
+    max-height: 1558px !important;
+  }
+
   .co-creation-lab {
     &__details {
       margin: 0 auto;
@@ -333,7 +334,28 @@
   }
 
   .organization_committe {
-    padding: 0;
+    padding: 14px;
+    padding-top: 59px;
+
+    h3 {
+      font-weight: bold;
+      color: #00285b;
+      font-size: 1.4em;
+      text-align: center;
+      font-weight: 900;
+      padding: 0 5px;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin: 0 auto;
+      color: #8D8F9C;
+      line-height: 1.2em;
+      font-size: 1em;
+      max-width: 597px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
 
   .card-org-container {
