@@ -307,7 +307,7 @@
   height: 100%;
   margin-top: 15px;
   text-align: center;
-  min-height: 314px;
+  min-height: 370px;
 
   &__title {
     font-size: 1.2em;
@@ -321,10 +321,10 @@
   }
 
   &__details {
-    font-size: 0.8em;
+    line-height: 19px !important;
+    font-size: 13px;
     margin-top: 15px;
-    line-height: 1.05;
-    min-height: 80.6px;
+    min-height: 114px;
     color: #ffffffa3;
   }
 
@@ -380,6 +380,10 @@
   z-index: 200;
 }
 
+.active {
+  animation: fill-color 2.5s ease-out forwards 4.8s;
+}
+
 @media (max-width: $breakpoint-lg) {
   .summit-header-info {
     padding: 0 50px;
@@ -388,15 +392,45 @@
       font-size: 3em;
     }
   }
+
+  .summit-header-social {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: $breakpoint-md) {
+
+  .line {
+    width: 100%;
+  }
+
+  .date {
+    font-size: 15px !important;
+    margin: 0 !important;
+    padding: 3px !important;
+    line-height: 0 !important;
+  }
+
+  .summit-header {
+    &__img {
+      min-height: 650px;
+      max-height: 800px;
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
   .summit-header-info {
     padding: 0 100px;
+    top: 1.5em;
 
     &__main {
       font-size: 2.5em;
     }
+  }
+
+  #logo {
+    margin-bottom: -22px !important;
   }
 }
 
@@ -409,6 +443,11 @@
     }
 
     &__submain {
+      button {
+        font-size: 1.8em;
+        padding: 17px 36px;
+      }
+
       p {
         font-size: 1.2em;
       }
@@ -457,10 +496,6 @@
   }
 }
 
-.active {
-  animation: fill-color 2.5s ease-out forwards 4.8s;
-}
-
 @keyframes lineMove {
   to {
     stroke-dashoffset: 0;
@@ -494,64 +529,4 @@
   to {
     fill: #ffffff;
   }
-}
-
-
-@media (max-width: $breakpoint-sm) {
-  .summit-header-info {
-
-    &__submain {
-      button {
-        font-size: 1.8em;
-        padding: 17px 36px;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-md) {
-  .line {
-    width: 100%;
-  }
-
-  .date {
-    font-size: 15px !important;
-    margin: 0 !important;
-    padding: 3px !important;
-    line-height: 0 !important;
-  }
-
-  .summit-header {
-    &__img {
-      min-height: 650px;
-      max-height: 800px;
-      width: 100%;
-      height: 100vh;
-    }
-  }
-
-
-  .summit-header-info {
-    top: 1.5em;
-  }
-
-  #logo {
-    margin-bottom: -22px !important;
-  }
-
-}
-
-@media (max-width: $breakpoint-lg) {
-  .summit-header-social {
-    visibility: hidden;
-  }
-}
-
-.summit-header-host-card__details {
-  line-height: 19px !important;
-  font-size: 13px;
-}
-
-.summit-header-host-card {
-  height: 370px;
 }

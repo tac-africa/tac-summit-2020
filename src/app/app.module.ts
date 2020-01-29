@@ -17,7 +17,10 @@ import { AboutComponent } from './about/about.component';
 import { SlashDetailsComponent } from './shared/slash-details/slash-details.component';
 import { HeaderPageNavComponent } from './shared/header-page-nav/header-page-nav.component';
 import { CoCreationLabComponent } from './co-creation-lab/co-creation-lab.component';
+import { Scroll, Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
+import { filter, map } from 'rxjs/operators';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,4 +45,21 @@ import { CoCreationLabComponent } from './co-creation-lab/co-creation-lab.compon
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(router: Router, viewportScroller: ViewportScroller) {
+    router.events.pipe(
+      filter((e): e is Scroll => e instanceof Scroll)
+    ).subscribe(e => {
+      if (e.position) {
+        // backward navigation
+        viewportScroller.scrollToPosition(e.position);
+      } else if (e.anchor) {
+        // anchor navigation
+        viewportScroller.scrollToAnchor(e.anchor);
+      } else {
+        // forward navigation
+        viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+  }
+}
