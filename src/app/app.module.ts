@@ -21,6 +21,7 @@ import { Scroll, Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
 import { filter, map } from 'rxjs/operators';
+import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { filter, map } from 'rxjs/operators';
     AboutComponent,
     HeaderPageNavComponent,
     CoCreationLabComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
