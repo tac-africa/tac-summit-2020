@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { CoCreationLabComponent } from './co-creation-lab/co-creation-lab.component';
 import { AboutComponent } from './about/about.component';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   // otherwise redirect to home
-  { path: '**', redirectTo: '' }
+  { path: '**', component: PageNotFoundComponent  }
 ];
 
 @NgModule({
