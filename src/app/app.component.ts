@@ -4,7 +4,6 @@ import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   template: `
-    <app-nav></app-nav>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
   `,

@@ -1,0 +1,28 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+.bgimg {
+  background: #ddd;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.w3-display-middle {
+  margin: 0 auto;
+
+  h1 {
+    color: black;
+    font-size: 3em;
+    font-weight: 900;
+    padding-bottom: 25px;
+  }
+
+  a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+}

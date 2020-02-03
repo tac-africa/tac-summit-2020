@@ -22,6 +22,7 @@ import { ViewportScroller } from '@angular/common';
 
 import { filter, map } from 'rxjs/operators';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
+import { ComingSoonComponent } from './errors/coming-soon/coming-soon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.co
     HeaderPageNavComponent,
     CoCreationLabComponent,
     PageNotFoundComponent,
+    ComingSoonComponent,
     
   ],
   imports: [

@@ -1,3 +1,4 @@
+import { ComingSoonComponent } from './errors/coming-soon/coming-soon.component';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { CoCreationLabComponent } from './co-creation-lab/co-creation-lab.component';
 import { AboutComponent } from './about/about.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'cocreation-lab', component: CoCreationLabComponent },
+  {path: 'coming-soon', component: ComingSoonComponent},
   {
     path: '',
     redirectTo: '',
