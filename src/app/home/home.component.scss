@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
-      url("../../assets/img/header-nav.png") center center no-repeat;
+      url("https://cdn.tacafrica.org/assets/img/header-nav.png") center center no-repeat;
     position: relative;
   }
 }
@@ -549,7 +549,7 @@ ul.social-network li {
 .social-network a.icoRss:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
 }
-
+ 
 .social-network a.icoFacebook:hover {
   background-color: #3B5998;
 }

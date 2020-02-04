@@ -1,0 +1,46 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+.bgimg {
+  background: linear-gradient(to bottom right, #5475a8, #00285b);
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.w3-display-middle {
+  margin: 0 auto;
+
+  h1 {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 900;
+    padding-bottom: 25px;
+  }
+
+  a {
+    color: #ffffffc2;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    max-width: 217px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease-in-out;
+
+    :hover {
+      background: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+
+  hr {
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    width: 50%;
+    background: goldenrod;
+    height: 2px;
+  }
+}

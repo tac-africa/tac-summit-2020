@@ -1,7 +1,8 @@
 <nav style="transition: .7s all;" [style.background]="isShow ? 'rgba(19, 19, 28, 0.94)' : 'transparent'"
   class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="/"><img src="../../assets/img/logo.png" height="50" alt="logo" srcset=""> </a>
+    <a class="navbar-brand" href="/"><img src="https://cdn.tacafrica.org/assets/img/logo.png" height="50" alt="logo"
+        srcset=""> </a>
 
     <button type="button" class="navbar-toggler navbar-toggle collapsed" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent"
@@ -22,7 +23,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link">Registration</a>
+          <a class="nav-link" [routerLink]="['/coming-soon']">Registration</a>
         </li>
       </ul>
       <a href="https://forms.gle/kJREzHH5Y63P1QbYA"><button class="btn sponsor-navbutton my-2 my-sm-0"

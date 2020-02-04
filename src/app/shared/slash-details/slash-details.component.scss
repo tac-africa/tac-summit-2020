@@ -2,7 +2,7 @@
 
 .slash-details {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
-    url("../../../assets/img/slash-details.JPG");
+    url("https://cdn.tacafrica.org/assets/img/slash-details.JPG");
   min-height: 355px;
   position: relative;
   background-attachment: fixed;
@@ -19,8 +19,6 @@
     color: white;
     display: flex;
     justify-content: space-around;
-
-
   }
 
   &__main {
