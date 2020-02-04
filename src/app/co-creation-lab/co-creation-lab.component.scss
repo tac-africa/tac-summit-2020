@@ -239,7 +239,7 @@
 
 @media (max-width: $breakpoint-lg) {
     .subject-matters {
-        max-height: 1558px !important;
+        min-height: 1558px !important;
     }
   .co-creation-lab {
     &__details {
