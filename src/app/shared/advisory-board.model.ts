@@ -4,6 +4,6 @@ export interface IStructure {
     name: string,
     image: string,
     title: string,
-    bio: number,
     structure_level: string,
+    bio: string,
 }

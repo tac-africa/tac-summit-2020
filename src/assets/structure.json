@@ -1,16 +1,4 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-import { Observable, of } from 'rxjs';
-import { IStructure } from '../shared/advisory-board.model';
-import { environment } from 'src/environments/environment';
-
-
-@Injectable({
-  providedIn: 'root'
-})
-export class StructureService {
-  structure: IStructure[] = [{
+[{
     "id": 1,
     "name": "AIG C.K. Aderanti",
     "image": "https://cdn.tacafrica.org/assets/img/aderanti.png",
@@ -98,13 +86,4 @@ export class StructureService {
     "structure_level": "Scientific Committe",
     "bio": "As CEO and President of AeroStream Consulting Inc., Orville McCalla has more than 15 years’ experience in the aviation industry, delivering solutions from the ground up to sustainable operations. Orville is a personable, highly motivated and results-oriented individual with strong commitment to safety and excellence. Orville has held positions such as Director, Business Development & Client Relations, Associate Business Development Manager, Aeronautical Analyst, and Technical Records Administrator. He has progressive thought leadership and is known for his ability to think outside the box, to find solutions to complex challenges, and sustainable business relationships.Orville is keen on fostering healthy, sustainable business relationships, and has successfully developed and implemented business campaigns penetrating new markets, successfully re-established business relationships, and fostered strategic partnerships that are directly linked to client’s Key Performance Indicators (KPIs).Orville has worked with airlines in North America including Canada, as well as airlines in Africa, assisting with maintaining compliance with civil aviation regulations and other regulatory authorities. He holds a private pilot’s licence, a diploma in Aviation Operations and has obtained his Quality Systems Auditor certificate from the Canadian Council for Aviation and Aerospace.”"
   }
-  ]
-
-  constructor(private http: HttpClient) { }
-
-  getStructure(): Observable<IStructure[]> {
-    return of<IStructure[]>(this.structure)
-  }
-}
-
-
+]

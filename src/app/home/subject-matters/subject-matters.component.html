@@ -13,131 +13,45 @@
         </p>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row" *ngIf="structures">
+          <ng-container *ngFor="let structure of structures">
+            <ng-container *ngIf="structure.structure_level==='Scientific Committe'">
 
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/mark-bond.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Mark Bond</h3>
-                <p>Principal Consultant
-                  The Institute for Drone Technology.</p>
-              </div>
-            </div>
-          </div>
+              <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+                  <ng-template #content let-modal>
+                    <div class="modal-header" style="background: #00285b;">
+                      <h4 style="font-weight: bold; color: white" class="modal-title" id="modal-basic-title">
+                        {{ structure.name }}</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span style="color: white;" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="line-height: 1.5; color:#000000c4;">{{ structure.bio }}</p>
+                    </div>
+                    <div class="modal-footer" style="justify-content: center; background: #00285b;">
+                      <a href="">
+                        <i style="font-size: 1.3em;" class="fa fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </ng-template>
 
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/jerry.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
+                <div class="expert-card">
+                  <div class="expert-card__img">
+                    <img [src]="structure.image" [alt]="structure.name" [title]="structure.name">
+                  </div>
+                  <div class="expert-card__details">
+                    <div class="open-details" (click)="open(content)"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <h3>{{ structure.name }}</h3>
+                    <p>
+                      {{ structure.title }}
+                    </p>
+                  </div>
                 </div>
-                <h3>Jerry Akubo</h3>
-                <p>National Technical Consultant - INTERPOL NCB Abuja
-                  CEO/Founder, TAC Initiative Africa
-                  .</p>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/sanjana2.jpg">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Sanjana Rathi</h3>
-                <p>Research Analyst, Cyber Peace Foundation, Ranchi Jharkhand, India.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/akson.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Ackson Kondwani Mwenda</h3>
-                <p>Aerospace Engineer | Founder African Drone Voice.Zambian.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/BROOKE.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Brooke Taspal</h3>
-                <p>CEO, Drone Alert Systems,
-                  Estonia
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/david.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>David Mc Creary</h3>
-                <p>President/CEO, New Age Aerial,
-                  Sacramento, California - USA.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/jan.jpg">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Jan Otto Johansen
-                </h3>
-                <p>Police Superintendent
-                  Head of C-UAV
-                  Bomb squad
-                  .</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="expert-card">
-              <div class="expert-card__img">
-                <img src="https://cdn.tacafrica.org/assets/img/Orville-McCalla.png">
-              </div>
-              <div class="expert-card__details">
-                <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-                <h3>Orville McCalla</h3>
-                <p>CEO/President AeroStream Consulting Inc.;
-                  Canada
-                  .</p>
-              </div>
-            </div>
-          </div>
+            </ng-container>
+          </ng-container>
 
         </div>
       </div>

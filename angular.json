@@ -29,10 +29,12 @@
             ],
             "styles": [
               "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/aos/dist/aos.css",
               "src/styles/main.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/aos/dist/aos.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/owl.carousel/dist/owl.carousel.min.js"
             ]
