@@ -16,7 +16,7 @@
 
   &__main {
     margin: 1em;
-    padding-top: 3em;
+    // padding-top: 3em;
   }
 }
 
@@ -35,12 +35,12 @@
     padding: 0px 0px 20px 0px;
     align-items: center;
     justify-content: left;
-    margin-left: 5.5em;
+    margin-left: 1.5em;
     text-decoration: none;
     transition: all .5s ease;
 
     p {
-      margin-left: 2.5em;
+      margin-left: 1em;
       color: white;
     }
 
@@ -107,10 +107,42 @@
   text-align: center;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 500px) {
   .follow-us-info {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+
+    .media-2 {
+      margin-left: 0 !important;
+    }
+  }
+
+  .contact-info {
     max-width: 400px;
     margin: 0 auto;
+    padding-right: 3em;
+  }
+}
+
+@media (max-width: 990px) {
+  .follow-us-info {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+
+    .media-2 {
+      margin-left: 1em;
+    }
+
+    .media {
+      margin-left: 1em;
+      margin-bottom: 1em;
+    }
   }
 
   .contact-info {
@@ -124,17 +156,54 @@
   }
 }
 
+@media (max-width: 400px) {
+  .follow-us-info {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-left: 0;
+
+    .media-2 {
+      margin-left: 1em !important;
+    }
+
+    .media {
+      margin-left: 1em !important;
+      margin-bottom: 1em !important;
+    }
+  }
+
+  .contact-info {
+    max-width: 400px;
+    margin: 0 auto;
+
+  }
+
+  .newsletter {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
 .follow-us-info {
   display: flex;
+  margin-left: 1.5em;
 
   .media-2 {
-    margin-left: 1em;
+    margin-left: 3em;
   }
 
   .media {
     margin-left: 1em;
     margin-bottom: 1em;
   }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: $breakpoint-md) {
@@ -149,7 +218,7 @@
       padding: 0px 0px 20px 0px;
       align-items: center;
       justify-content: left;
-      margin-left: 2.5em;
+      margin-left: 1.5em;
       text-decoration: none;
       transition: all .5s ease;
 
@@ -184,9 +253,6 @@
     }
   }
 
-  .follow-us {
-    padding-left: 1.6em !important;
-  }
 
   .last {
     color: #fff;
@@ -198,7 +264,6 @@
   }
 }
 
-
-.follow-us {
-  padding-left: 3em;
+.follow-us-info {
+  margin: 0 auto;
 }
