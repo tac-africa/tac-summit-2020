@@ -1,4 +1,5 @@
 @import "../../../styles/abstracts/variables";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .summit-footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
@@ -9,6 +10,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 3em;
+  font-family: 'Lato',
+    sans-serif;
 
   &__main {
     margin: 1em;
@@ -23,7 +27,7 @@
     color: white;
     font-size: 2em;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
 
   a {
@@ -52,7 +56,7 @@
     color: white;
     margin-bottom: 1em;
     text-align: center;
-    line-height: 22px;
+    line-height: 28px;
   }
 }
 
@@ -74,19 +78,16 @@
 }
 
 .fa-instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-  border-radius: 20px;
-  // -webkit-background-clip: text !important;
-  // -webkit-text-fill-color: transparent !important;
+  color: #fd5949 !important;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 21%;
+  width: 15%;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 60px;
 
   li {
     color: #fff;
@@ -123,11 +124,24 @@
   }
 }
 
+.follow-us-info {
+  display: flex;
+
+  .media-2 {
+    margin-left: 1em;
+  }
+
+  .media {
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+}
+
 @media (max-width: $breakpoint-md) {
 
   .col-lg-4 {
     h1 {
-      margin-bottom: .5em;
+      margin-bottom: 1em;
     }
 
     a {
@@ -135,7 +149,7 @@
       padding: 0px 0px 20px 0px;
       align-items: center;
       justify-content: left;
-      margin-left: 4.5em;
+      margin-left: 2.5em;
       text-decoration: none;
       transition: all .5s ease;
 
@@ -147,6 +161,7 @@
       i {
         color: white;
         transition: all .5s ease;
+        margin-right: 10px;
       }
     }
   }
@@ -170,7 +185,7 @@
   }
 
   .follow-us {
-    padding-left: 2em;
+    padding-left: 1.6em !important;
   }
 
   .last {
