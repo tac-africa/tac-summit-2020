@@ -1,4 +1,6 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { StructureService } from 'src/app/errors/structure.service';
 
 @Component({
   selector: 'app-subject-matters',
@@ -6,18 +8,18 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./subject-matters.component.scss']
 })
 export class SubjectMattersComponent implements OnInit {
-  @ViewChild('myModal', { static: false }) myModal: ElementRef;
-  @ViewChild('close', { static: false }) close: ElementRef;
+  structures = [];
 
-
-  constructor() { }
+  constructor(private structureService: StructureService, private modalService: NgbModal) { }
 
   ngOnInit() {
+      this.structureService.getStructure().subscribe((data: any[]) => {
+      this.structures = data;
+    })
   }
 
-  openClick() {
-    this.myModal.nativeElement.style.display = "block";
-    console.log('working')
+  open(content) {
+    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' })
   }
 
 }

@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   baseURL: 'https://cdn.tacafrica.org',
+  mainBaseURL: 'http://localhost:4200'
 };
 
 /*

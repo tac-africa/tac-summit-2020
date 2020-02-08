@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { Meta } from '@angular/platform-browser';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
+    AOS.init();
     this.metaTagService.addTags([
       { property: 'name:description', content: 'TAC Africa Summit 2020 will be organized under the patronage of the  Office of the National Security Adviser (ONSA) and the Ministry of Aviation in partnership with International organization and other Authorized Agencies.' },
       //Facebook Meta Tags

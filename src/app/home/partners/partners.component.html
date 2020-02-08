@@ -8,7 +8,7 @@
   </div>
 
     <div class="container">
-      <owl-carousel-o [options]="customOptions">
+      <owl-carousel-o [options]="customOptions" data-aos="fade-up" data-aos-duration="2000">
 
         <ng-template carouselSlide *ngFor="let image of images" [id]="image.id">
           <a [href]="image.link">

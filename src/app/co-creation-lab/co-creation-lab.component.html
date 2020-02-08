@@ -5,7 +5,7 @@
       <div>
         <div class="container co-creation-lab main-top-container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-up" data-aos-duration="2000">
               <div class="co-creation-lab__details">
                 <h3>OVERVIEW</h3>
                 <p style="margin-bottom: 15px;"> This Lab will bring together global subject matter experts
@@ -25,7 +25,7 @@
               </div>
             </div>
 
-            <div class="col-lg-5 co-creation-lab__logo">
+            <div class="col-lg-5 co-creation-lab__logo" data-aos="fade-up" data-aos-duration="2000">
               <svg width="100%" height="131" viewBox="0 0 1722 975" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="1722" height="975" fill="url(#tacpattern)" />
@@ -44,7 +44,8 @@
     </section>
     <app-slash-details></app-slash-details>
 
-    <section class="org" style="background: rgb(223, 222, 222);padding-top: 100px;padding-bottom: 100px;">
+    <section class="org"
+      style="background: rgb(223, 222, 222);padding-top: 100px !important;padding-bottom: 100px !important;">
       <div>
         <div class="organization_committe">
           <h3>Organization Committe</h3>
@@ -56,7 +57,7 @@
           <div class="row card-org-container">
 
             <!-- card-beginning -->
-            <div class="card-org col-lg-4 col-sm-12">
+            <div class="card-org col-lg-4 col-sm-12" data-aos="fade-up" data-aos-duration="2000" >
               <div class="card-svg-org">
                 <svg width="142" height="92" viewBox="0 0 142 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -75,7 +76,7 @@
             </div>
             <!-- card-ending -->
             <!-- card-beginning -->
-            <div class="card-org col-lg-4 col-sm-12">
+            <div class="card-org col-lg-4 col-sm-12" data-aos="fade-up" data-aos-duration="2000">
               <div class="card-svg-org">
                 <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -92,7 +93,7 @@
             </div>
             <!-- card-ending -->
             <!-- card-beginning -->
-            <div class="card-org col-lg-4 col-sm-12">
+            <div class="card-org col-lg-4 col-sm-12" data-aos="fade-up" data-aos-duration="2000">
               <div class="card-svg-org">
                 <svg width="86" height="83" viewBox="0 0 86 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -141,7 +142,7 @@
             </div>
             <!-- card-ending -->
             <!-- card-beginning -->
-            <div class="card-org col-lg-6 col-sm-12">
+            <div class="card-org col-lg-6 col-sm-12" data-aos="fade-up" data-aos-duration="2000">
               <div class="card-svg-org">
                 <svg width="91" height="120" viewBox="0 0 91 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -162,7 +163,7 @@
             </div>
             <!-- card-ending -->
             <!-- card-beginning -->
-            <div class="card-org col-lg-6 col-sm-12">
+            <div class="card-org col-lg-6 col-sm-12" data-aos="fade-up" data-aos-duration="2000">
               <div class="card-svg-org">
                 <svg width="137" height="112" viewBox="0 0 137 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -210,60 +211,45 @@
             </p>
           </div>
           <div class="container">
-            <div class="row">
+            <div class="row" *ngIf="structures">
 
-              <div class="col-lg-4">
-                <div class="expert-card">
-                  <div class="expert-card__img">
-                    <img src="https://cdn.tacafrica.org/assets/img/aderanti.png">
-                  </div>
-                  <div class="expert-card__details">
-                    <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000" *ngFor="let structure of structures">
+                <div *ngIf="structure.structure_level === 'advisory board'">
+                  <ng-template #content let-modal>
+                    <div class="modal-header" style="background: #00285b;">
+                      <h4 style="font-weight: bold; color: white" class="modal-title"
+                        id="modal-basic-title">{{ structure.name }}</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span style="color: white;" aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <h3>AIG C.K. Aderanti</h3>
-                    <p>
-                      Daniel Security Systems Limited
-                      President/CEO
-                      Nigeria.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="col-lg-4">
-                <div class="expert-card">
-                  <div class="expert-card__img">
-                    <img src="https://cdn.tacafrica.org/assets/img/ingram.png">
-                  </div>
-                  <div class="expert-card__details">
-                    <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
+                    <div class="modal-body">
+                      <p style="line-height: 1.5; color:#000000c4;">{{ structure.bio }}</p>
                     </div>
-                    <h3>P.J. Ingram</h3>
-                    <p>MBE BSc MA GCGI
-                      Managing Editor,
-                      Grey Hare Media Limited,
-                      London, United Kingdom
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="expert-card">
-                  <div class="expert-card__img">
-                    <img src="https://cdn.tacafrica.org/assets/img/Ibrahim-Gambari.png">
-                  </div>
-                  <div class="expert-card__details">
-                    <div class="open-details"><i class="fa fa-plus" aria-hidden="true"></i>
+                    <div class="modal-footer" style="justify-content: center; background: #00285b;">
+                      <a href="">
+                        <i style="font-size: 1.3em;" class="fa fa-linkedin"></i>
+                      </a>
                     </div>
-                    <h3>Ibrahim Gambari</h3>
-                    <p>Founder/Chairman of Savannah Center
-                    </p>
-                  </div>
-                </div>
-              </div>
+                  </ng-template>
 
+                  <div class="expert-card">
+                    <div class="expert-card__img">
+                      <img [src]="structure.image" [alt]="structure.name" [title]="structure.name">
+                    </div>
+                    <div class="expert-card__details">
+                      <div class="open-details" (click)="open(content)"><i class="fa fa-plus" aria-hidden="true"></i>
+                      </div>
+                      <h3>{{ structure.name }}</h3>
+                      <p>
+                        {{ structure.title }}
+                      </p>
+                    </div>
+                  </div>                  
+                </div>
+
+
+              </div>
             </div>
           </div>
 
@@ -274,7 +260,7 @@
     <!-- summit subject matters-->
     <app-subject-matters></app-subject-matters>
 
-    <!-- summit partners -->
+    <!-- summit Secteriate -->
     <section>
       <div class="summit-partners main-top-container">
         <div class="summit-partners__primary-title">
@@ -285,7 +271,7 @@
         </div>
 
         <div class="container">
-          <owl-carousel-o [options]="customOptions">
+          <owl-carousel-o [options]="customOptions" data-aos="fade-up" data-aos-duration="2000">
 
             <ng-template carouselSlide *ngFor="let image of images" [id]="image.id">
               <a [href]="image.link">

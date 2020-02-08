@@ -23,6 +23,7 @@ import { ViewportScroller } from '@angular/common';
 import { filter, map } from 'rxjs/operators';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { ComingSoonComponent } from './errors/coming-soon/coming-soon.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { ComingSoonComponent } from './errors/coming-soon/coming-soon.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
