@@ -11,11 +11,10 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CoCreationLabComponent implements OnInit {
   title = 'Virtual Co-creation Group'
-  abdul = `${environment.baseURL}/assets/img/abdul.jpg`;
-  bright = `${environment.baseURL}/assets/img/bright.jpg`;
-  kind = `${environment.baseURL}/assets/img/kind.jpg`;
-  ibrahim = `${environment.baseURL}/assets/img/Ibrahim.jpg`;
-  sylvernus = `${environment.baseURL}/assets/img/sylvernus.jpg`;
+  cocreation_lab = `${environment.baseURL}/assets/img/cocreation-lab.jpg`;
+  office = `${environment.baseURL}/assets/img/office.jpg`;
+  officers = `${environment.baseURL}/assets/img/officers.jpg`;
+
 
   structures = [];
 
@@ -53,33 +52,18 @@ export class CoCreationLabComponent implements OnInit {
   images = [
     {
       id: 1,
-      text: "Abdullazeez Ocheja",
-      image: this.abdul,
-      link: "#",
+      text: "cocreation-lab",
+      image: this.cocreation_lab,
     },
     {
       id: 2,
-      text: "Bright Lawrence",
-      image: this.bright,
-      link: "#",
+      text: "office",
+      image: this.office,
     },
     {
       id: 3,
-      text: "Kind Akubo",
-      image: this.kind,
-      link: "#",
-    },
-    {
-      id: 4,
-      text: "Ibrahim Ali",
-      image: this.ibrahim,
-      link: "#",
-    },
-    {
-      id: 5,
-      text: "Sylvernus Akubo",
-      image: this.sylvernus,
-      link: "#",
+      text: "officers",
+      image: this.officers,
     },
   ]
 

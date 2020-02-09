@@ -3,7 +3,7 @@
 .subject-matters {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
     url("https://cdn.tacafrica.org/assets/img/subject-matters.png");
-  min-height: 1148px;
+  min-height: 1588px;
   height: 90vh;
   position: relative;
   background-attachment: fixed;
@@ -75,7 +75,7 @@
   background: white;
   border-radius: 15px;
   margin-top: 30px;
-  min-height: 366px;
+  min-height: 380px;
 
 
   &__img {
@@ -117,6 +117,7 @@
       font-size: 12px;
       margin-top: 10px;
       min-height: 36px;
+      line-height: 1.2;
     }
 
     i {
@@ -151,7 +152,7 @@
 
 @media (max-width: $breakpoint-lg) {
   .subject-matters {
-    min-height: 3553px;
+    min-height: 4080px;
   }
 }
 
