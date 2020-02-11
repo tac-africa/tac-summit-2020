@@ -1,7 +1,6 @@
-
 .bgimg {
   background: linear-gradient(to bottom right, #5475a8, #00285b);
-  height: 90vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -29,7 +28,7 @@
     background: rgba(0, 0, 0, 0.5);
     transition: all .5s ease-in-out;
 
-    :hover {
+    &:hover {
       background: rgba(0, 0, 0, 0.2) !important;
     }
   }
