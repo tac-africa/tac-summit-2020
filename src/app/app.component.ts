@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import * as AOS from 'aos';
+import { Router, NavigationEnd } from '@angular/router';
 
+declare let gtag: Function;
 @Component({
   selector: 'app-root',
   template: `
@@ -10,10 +12,15 @@ import * as AOS from 'aos';
   `,
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'tacsummit';
 
-  constructor(private metaTagService: Meta) {
+  constructor(private metaTagService: Meta, public router: Router) {
+    router.events.subscribe((y: NavigationEnd) => {
+      if (y instanceof NavigationEnd) {
+        gtag('config', 'UA-122223071-2', { 'page_path': y.url });
+      }
+    })
   }
 
   ngOnInit() {

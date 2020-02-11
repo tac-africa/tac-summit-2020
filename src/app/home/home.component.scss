@@ -10,7 +10,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(to bottom, rgba(0, 40, 90, .95)),
       url("https://cdn.tacafrica.org/assets/img/header-nav.png") center center no-repeat;
     position: relative;
   }
@@ -250,22 +250,24 @@
 
   &__submain {
     button {
-      border: 2px solid goldenrod;
-      background-color: transparent;
-      border-radius: 500px;
+      border: none;
+      border-radius: 10px;
       color: white;
-      font-weight: bold;
-      transition: 0.5s ease-in-out;
+      font-weight: 700;
+      transition: .3s ease-in-out;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 2em;
       padding: 15px 45px;
       margin-top: 2.5em;
       outline: none;
+      background: rgb(247, 158, 1);
+
 
       &:hover,
       &:after,
       &:focus {
-        background-color: #916e18;
+        background-color: rgb(255, 255, 255);
+        color: rgb(218, 165, 32);
       }
     }
   }
@@ -336,7 +338,7 @@
       background-color: transparent;
       box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
-      color: white;
+      color: rgb(218, 165, 32);
       transition: 0.5s ease-in-out;
       font-family: "Roboto", sans-serif;
       font-size: 0.9em;
@@ -549,7 +551,7 @@ ul.social-network li {
 .social-network a.icoRss:hover {
   background-color: #F56505;
 }
- 
+
 .social-network a.icoFacebook:hover {
   background-color: #3B5998;
 }
