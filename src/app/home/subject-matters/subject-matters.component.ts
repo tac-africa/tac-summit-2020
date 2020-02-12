@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { StructureService } from 'src/app/errors/structure.service';
 
@@ -13,13 +13,18 @@ export class SubjectMattersComponent implements OnInit {
   constructor(private structureService: StructureService, private modalService: NgbModal) { }
 
   ngOnInit() {
-      this.structureService.getStructure().subscribe((data: any[]) => {
+    this.structureService.getStructure().subscribe((data: any[]) => {
       this.structures = data;
     })
   }
 
   open(content) {
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' })
+    this.modalService.open(content, {
+      windowClass: 'modal-fade', 
+      ariaLabelledBy: 'subject-matters-expert',
+      centered: true,
+      keyboard: true
+    })
   }
 
 }

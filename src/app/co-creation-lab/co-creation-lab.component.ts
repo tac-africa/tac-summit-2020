@@ -68,6 +68,10 @@ export class CoCreationLabComponent implements OnInit {
   ]
 
   open(content) {
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' })
+    this.modalService.open(content, {
+      ariaLabelledBy: 'Advisory-board', 
+      windowClass: 'modal-fade',
+      centered: true,
+      keyboard: true })
   }
 }
