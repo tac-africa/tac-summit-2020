@@ -15,7 +15,7 @@
     sans-serif;
 
   &__main {
-    margin: 1em;
+    margin: .2em;
     // padding-top: 3em;
   }
 }
@@ -25,7 +25,7 @@
 
   h1 {
     color: white;
-    font-size: 2em;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 1.5em;
   }
@@ -107,6 +107,12 @@
   text-align: center;
 }
 
+@media(max-width: 768px) {
+  .contact-info {
+    max-width: 242px !important;
+  }
+}
+
 @media (max-width: 500px) {
   .follow-us-info {
     max-width: 300px;
@@ -126,6 +132,7 @@
     max-width: 400px;
     margin: 0 auto;
     padding-right: 3em;
+    align-items: center;
   }
 }
 
@@ -145,9 +152,14 @@
     }
   }
 
+
+
   .contact-info {
     max-width: 400px;
     margin: 0 auto;
+    max-width: 312px;
+    margin: 0 auto;
+
   }
 
   .newsletter {
@@ -177,6 +189,7 @@
   .contact-info {
     max-width: 400px;
     margin: 0 auto;
+    align-items: center;
 
   }
 
@@ -191,7 +204,7 @@
   margin-left: 1.5em;
 
   .media-2 {
-    margin-left: 3em;
+    margin-left: 1.2em;
   }
 
   .media {
@@ -203,10 +216,10 @@
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-lg) {
 
   .col-lg-4 {
     h1 {
