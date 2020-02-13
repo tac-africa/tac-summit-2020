@@ -11,9 +11,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CoCreationLabComponent implements OnInit {
   title = 'Virtual Co-creation Group'
-  cocreation_lab = `${environment.baseURL}/assets/img/cocreation-lab.jpg`;
-  office = `${environment.baseURL}/assets/img/office.jpg`;
-  officers = `${environment.baseURL}/assets/img/officers.jpg`;
+  cocreation_lab = `${environment.baseURL}/cocreation-lab.jpg`;
+  office = `${environment.baseURL}/office.jpg`;
+  officers = `${environment.baseURL}/officers.jpg`;
 
 
   structures = [];

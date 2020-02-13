@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseURL: 'https://cdn.tacafrica.org',
+  baseURL: 'https://res.cloudinary.com/silva/image/upload/v1581604140',
   mainBaseURL: 'http://localhost:4200'
 };
 

@@ -7,11 +7,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./partners.component.scss']
 })
 export class PartnersComponent implements OnInit {
-  itdt = `${environment.baseURL}/assets/img/itdt.png`;
-  droneAlert = `${environment.baseURL}/assets/img/drone-alert.png`;
-  newAerial = `${environment.baseURL}/assets/img/new-aerial.png`;
-  greyHare = `${environment.baseURL}/assets/img/grey-hare.png`;
-  danielsSecurity = `${environment.baseURL}/assets/img/daniels-security.png`;
+  itdt = `${environment.baseURL}/itdt.png`;
+  droneAlert = `${environment.baseURL}/drone-alert.png`;
+  newAerial = `${environment.baseURL}/new-aerial.png`;
+  greyHare = `${environment.baseURL}/grey-hare.png`;
+  danielsSecurity = `${environment.baseURL}/daniels-security.png`;
 
 
   constructor() { }
