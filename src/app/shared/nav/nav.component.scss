@@ -157,3 +157,10 @@
         }
   }
 }
+
+.navbar-brand.logo {
+  &:hover {
+    transform: skewY(360deg);
+    transition: all .5s;
+  }
+}
