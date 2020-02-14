@@ -260,13 +260,16 @@
       margin-top: 2.5em;
       outline: none;
       background: rgb(247, 158, 1);
+      box-shadow: 0px 2px 10px 4px #5946164f,
+      12px 12px 12px 0 #00000008;
 
 
       &:hover,
       &:after,
       &:focus {
-        background-color: rgb(255, 255, 255);
-        color: rgb(218, 165, 32);
+        background-color: #bb8d1b;
+        color: #ffffffdb;
+        box-shadow: none;
       }
     }
   }

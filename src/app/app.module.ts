@@ -24,6 +24,8 @@ import { filter, map } from 'rxjs/operators';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { ComingSoonComponent } from './errors/coming-soon/coming-soon.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     CarouselModule,
     HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
