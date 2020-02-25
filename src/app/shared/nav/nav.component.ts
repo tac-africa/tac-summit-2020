@@ -1,16 +1,19 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, HostListener, Inject, OnInit, Input } from '@angular/core';
 
+declare var $: any;
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent implements AfterViewInit {
+export class NavComponent implements OnInit {
   @ViewChild('top', { static: false }) top: ElementRef;
   @ViewChild('middle', { static: false }) middle: ElementRef;
   @ViewChild('bottom', { static: false }) bottom: ElementRef;
-  isShow: boolean;
+  isShow: boolean
   topPosToStartShowing = 250;
+
+
 
   @HostListener('window:scroll')
   checkScroll() {
@@ -25,9 +28,27 @@ export class NavComponent implements AfterViewInit {
     }
   }
 
-  constructor() { }
+  constructor() { 
+  }
 
-  ngAfterViewInit() {
+  ngOnInit() {
+    
+    $(".dropdown").hover(function () {
+      $(".dropdown-menu").dropdown('show');
+      $(this).find(".dropdownToggle").attr("aria-expanded", "true");
+    }, function() {
+      $(".dropdown-menu").dropdown('hide');
+      $(this).find(".dropdownToggle").attr("aria-expanded", "false");
+    });
+
+    if ($(".dropdown-item").hasClass("active") === true ) {
+      console.log("silva");
+      $(".nav-summit").removeClass("active");
+    } else {
+      $(".nav-summit").addClass("active");
+    }
+
+
   }
   onClickMe() {
     this.top.nativeElement.classList.toggle('top-bar');

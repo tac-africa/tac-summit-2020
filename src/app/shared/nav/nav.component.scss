@@ -3,21 +3,20 @@
 .sponsor-navbutton {
   border: none;
   border-radius: 3px;
-  color: rgb(2, 44, 95);
+  color: black;
   border-color: transparent;
   transition: .3s ease-in-out;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 4.5em;
+  margin-left: 3em;
   padding: 7px 24px;
-  background: rgb(255, 255, 255);
+  background: $summit-light-orange;
   font-weight: bold;
 
 
   &:hover,
   &:after,
   &:focus {
-    background-color: goldenrod;
-    color: white;
+  background: $summit-dark-orange;
   }
 }
 
@@ -72,7 +71,7 @@
     left: 0;
     right: 0;
     bottom: -10px;
-    height: .25em;
+    height: .15em;
     background: goldenrod;
     content: "";
     z-index: 1;
@@ -158,9 +157,15 @@
   }
 }
 
-.logo-img {
-  &:hover {
-    transform: skewY(360deg);
-    transition: all .5s;
-  }
+.dropdown-toggle::after {
+  transition: transform 0.15s linear;
+}
+
+.show.dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.image-sidebar {
+  position: absolute;
+  top: 0;
 }

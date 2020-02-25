@@ -1,11 +1,12 @@
 <nav style="transition: .7s all;" [style.box-shadow]="isShow ? '0 2px 5px rgba(0, 0, 0, 0.17)' : 'none'"
   [style.background]="isShow ? 'rgb(0, 40, 91)' : 'transparent'"
   class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
+  <img src="../../../assets/asset1.png" class="image-sidebar" alt="" srcset="">
   <div class="container">
-    <a class="navbar-brand" href="/"><img class="logo-img" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-         src="https://res.cloudinary.com/silva/image/upload/v1581604140/logo.png" height="50" alt="logo"
-        srcset=""> </a>
+    <a class="navbar-brand" [routerLink]="['/']"><img class="logo-img" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" src="https://res.cloudinary.com/silva/image/upload/v1581604140/logo.png" height="50"
+        alt="logo" srcset=""> </a>
 
     <button type="button" class="navbar-toggler navbar-toggle collapsed" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent"
@@ -17,9 +18,16 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact:true }">Home</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-summit" href="#" id="summitNavbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Summit
+
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['']" routerLinkActive="active">Virtual Co-creation Lab</a>
+            <a class="dropdown-item" [routerLink]="['']" routerLinkActive="active">Tac General Summit</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a>
@@ -28,9 +36,13 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/coming-soon']">Registration</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/coming-soon']">Contact Us</a>
+        </li>
       </ul>
       <a href="https://forms.gle/kJREzHH5Y63P1QbYA"><button class="btn sponsor-navbutton my-2 my-sm-0"
-        type="submit">Call for Experts</button></a> 
+          type="submit">Call for Experts</button></a>
     </div>
   </div>
 

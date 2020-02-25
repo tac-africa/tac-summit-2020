@@ -22,13 +22,13 @@
       div {
         width: 30px;
         height: 4px;
-        background-color: $secondary-main-color;
+        background-color: $summit-light-blue;
       }
     }
 
 
     h3 {
-      color: $secondary-main-color;
+      color: $summit-light-blue;
       font-size: 1.7em;
       text-align: center;
       font-weight: 900;
@@ -126,6 +126,10 @@
   }
 }
 
+.large-info-graph {
+  display: block;
+}
+
 @media (max-width: $breakpoint-lg) {
   .mini-info-graph {
     display: block !important;
@@ -142,4 +146,10 @@
       margin-bottom: 0;
     }
   } 
+}
+
+.co-creation-graph {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 853px;
 }

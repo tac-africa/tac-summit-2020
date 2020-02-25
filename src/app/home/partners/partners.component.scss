@@ -51,3 +51,12 @@
     }
   }
 }
+
+img {
+  filter: grayscale(100%);
+  transition: all .5s;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
