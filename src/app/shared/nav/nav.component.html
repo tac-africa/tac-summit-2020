@@ -1,19 +1,20 @@
 <nav style="transition: .7s all;" [style.box-shadow]="isShow ? '0 2px 5px rgba(0, 0, 0, 0.17)' : 'none'"
   [style.background]="isShow ? 'rgb(0, 40, 91)' : 'transparent'"
   class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
-  <img src="../../../assets/asset1.png" class="image-sidebar" alt="" srcset="">
+  <img src="../../../assets/asset1.png" [style.opacity]="isShow ? '1' : '0'"
+    class="image-sidebar" alt="" srcset="">
   <div class="container">
     <a class="navbar-brand" [routerLink]="['/']"><img class="logo-img" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000" src="https://res.cloudinary.com/silva/image/upload/v1581604140/logo.png" height="50"
-        alt="logo" srcset=""> </a>
+        alt="logo" srcset=""></a>
 
     <button type="button" class="navbar-toggler navbar-toggle collapsed" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent"
       aria-label="Toggle navigation" (click)="onClickMe()">
-      <span class="icon-bar" #top></span>
+      <span class="icon-bar" style="width: 30px;" #top></span>
       <span class="icon-bar" #middle></span>
-      <span class="icon-bar" #bottom></span>
+      <span class="icon-bar" style="width: 30px;" #bottom></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

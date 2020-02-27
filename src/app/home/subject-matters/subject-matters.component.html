@@ -2,47 +2,48 @@
   <div class="subject-matters ">
     <div class="subject-matters__container">
       <div class="title main-top-container">
-        <div class="primary-title">
-          <div></div>
-          <h3>Scientific Committee</h3>
-          <div></div>
-        </div>
+        <div class="container-title">
+          <div class="container-title__primary">
+            <div class="summit-line ln-white"></div>
+            <h2 class="summit-title">SCIENTIFIC COMMITTEE</h2>
+          </div>
 
-        <p>This is the engine house that will create momentum for the implementation of global platform that will
-          discuss drone related subject matter at a global level. Each co-creation lab will be made of ten (10) experts.
-        </p>
+          <div class="container-title__secondary">
+            <h2>SCIENTIFIC COMMITTEE</h2>
+          </div>
+        </div>
       </div>
+
       <div class="container">
         <div class="row" *ngIf="structures">
-          <ng-container *ngFor="let structure of structures">
-            <ng-container *ngIf="structure.structure_level==='Scientific Committe'">
+          <ng-container *ngFor="let structure of structures; let i = index">
+            <ng-container *ngIf="structure.structure_level==='Scientific Committe' && i <= 10">
 
               <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000">
-                  <ng-template #content let-modal>
-                    <div class="modal-header" style="background: #00285b;">
-                      <h4 style="font-weight: bold; color: white" class="modal-title" id="modal-basic-title">
-                        {{ structure.name }}</h4>
-                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                        <span style="color: white;" aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p style="line-height: 1.5; color:#000000c4;">{{ structure.bio }}</p>
-                    </div>
-                    <div class="modal-footer" style="justify-content: center; background: #00285b;">
-                      <a href="">
-                        <i style="font-size: 1.3em; color: white" class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </ng-template>
+                <ng-template #content let-modal>
+                  <div class="modal-header" style="background: #00285b;">
+                    <h4 style="font-weight: bold; color: white" class="modal-title" id="modal-basic-title">
+                      {{ structure.name }}</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                      <span style="color: white;" aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p style="line-height: 1.5; color:#000000c4;">{{ structure.bio }}</p>
+                  </div>
+                  <div class="modal-footer" style="justify-content: center; background: #00285b;">
+                    <a href="">
+                      <i style="font-size: 1.3em; color: white" class="fa fa-linkedin"></i>
+                    </a>
+                  </div>
+                </ng-template>
 
                 <div class="expert-card">
                   <div class="expert-card__img">
-                    <img [src]="structure.image" [alt]="structure.name" [title]="structure.name">
+                    <img [src]="structure.image" [alt]="structure.name" (click)="open(content)"
+                      [title]="structure.name">
                   </div>
                   <div class="expert-card__details">
-                    <div class="open-details" (click)="open(content)"><i class="fa fa-plus" aria-hidden="true"></i>
-                    </div>
                     <h3>{{ structure.name }}</h3>
                     <p>
                       {{ structure.title }}
@@ -54,19 +55,14 @@
           </ng-container>
 
         </div>
-      </div>
 
+        <div class="d-flex justify-content-end">
+          <a href="#">
+            <button class="btn btn-outline-sec">See More <i class="fas fa-arrow-right"></i></button>
+          </a>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
-
-<!-- The Modal -->
-<div id="myModal" #myModal class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close" #close>&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>

@@ -1,626 +1,188 @@
 @import "../../styles/abstracts/variables";
 
+
 .summit-header {
-  &__img {
-    min-height: 815px;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background: linear-gradient(to bottom, rgba(0, 40, 90, .95)),
-      url(../../assets/drone-2028611.png) center center no-repeat;
-    position: relative;
+  min-height: 815px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  ;
+  background-color: $summit-dark-blue;
+
+  &__container {
+    color: #fff;
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10em;
+    display: flex;
+
+    .row {
+      width: 100%;
+      position: relative;
+
+      .drone-icon {
+        height: 150px;
+        position: absolute;
+        right: -85px;
+        top: -58px;
+      }
+    }
   }
 }
 
 .summit-header-info {
-  position: absolute;
-  top: 72px;
-  padding: 0 150px;
-  font-weight: bold;
-  user-select: none;
-  text-align: center;
-  width: 100%;
   z-index: 100;
-
-  &__main {
-    .container_home {
-      width: 100%;
-
-      #logo {
-        align-self: center;
-        margin-top: 150px;
-        height: 220px;
-        width: 100%;
-        margin-bottom: 40px;
-      }
-
-      #logo path:nth-child(1) {
-        stroke-dasharray: 255.81573486328125;
-        stroke-dashoffset: 255.81573486328125;
-      }
-
-      #logo path:nth-child(2) {
-        stroke-dasharray: 316.1115417480469;
-        stroke-dashoffset: 316.1115417480469;
-      }
-
-      #logo path:nth-child(3) {
-        stroke-dasharray: 321.490234375;
-        stroke-dashoffset: 321.490234375;
-      }
-
-      #logo path:nth-child(4) {
-        stroke-dasharray: 316.1115417480469;
-        stroke-dashoffset: 316.1115417480469;
-      }
-
-      #logo path:nth-child(5) {
-        stroke-dasharray: 286.72564697265625;
-        stroke-dashoffset: 286.72564697265625;
-      }
-
-      #logo path:nth-child(6) {
-        stroke-dasharray: 359.7320251464844;
-        stroke-dashoffset: 359.7320251464844;
-      }
-
-      #logo path:nth-child(7) {
-        stroke-dasharray: 172.83985900878906;
-        stroke-dashoffset: 172.83985900878906;
-      }
-
-      #logo path:nth-child(8) {
-        stroke-dasharray: 321.489990234375;
-        stroke-dashoffset: 321.489990234375;
-      }
-
-      #logo path:nth-child(9) {
-        stroke-dasharray: 316.11151123046875;
-        stroke-dashoffset: 316.11151123046875;
-      }
-
-      #logo path:nth-child(10) {
-        stroke-dasharray: 337.59478759765625;
-        stroke-dashoffset: 337.59478759765625;
-      }
-
-      #logo path:nth-child(11) {
-        stroke-dasharray: 359.73345947265625;
-        stroke-dashoffset: 359.73345947265625;
-      }
-
-      #logo path:nth-child(12) {
-        stroke-dasharray: 331.377197265625;
-        stroke-dashoffset: 331.377197265625;
-      }
-
-      #logo path:nth-child(13) {
-        stroke-dasharray: 392.8513488769531;
-        stroke-dashoffset: 392.8513488769531;
-      }
-
-      #logo path:nth-child(14) {
-        stroke-dasharray: 350.75201416015625;
-        stroke-dashoffset: 350.75201416015625;
-      }
-
-      #logo path:nth-child(15) {
-        stroke-dasharray: 366.7477722167969;
-        stroke-dashoffset: 366.7477722167969;
-      }
-
-      #logo path:nth-child(16) {
-        stroke-dasharray: 321.49072265625;
-        stroke-dashoffset: 321.49072265625;
-      }
-
-      #logo path:nth-child(17) {
-        stroke-dasharray: 331.3775939941406;
-        stroke-dashoffset: 331.3775939941406;
-      }
-
-      #logo path:nth-child(18) {
-        stroke-dasharray: 337.19500732421875;
-        stroke-dashoffset: 337.19500732421875;
-      }
-
-      #logo path:nth-child(19) {
-        stroke-dasharray: 392.8534240722656;
-        stroke-dashoffset: 392.8534240722656;
-      }
-
-      #logo path:nth-child(20) {
-        stroke-dasharray: 255.81591796875;
-        stroke-dashoffset: 255.81591796875;
-      }
-
-      #logo path:nth-child(21) {
-        stroke-dasharray: 350.7540283203125;
-        stroke-dashoffset: 350.7540283203125;
-      }
-
-      #logo path:nth-child(22) {
-        stroke-dasharray: 359.73565673828125;
-        stroke-dashoffset: 359.73565673828125;
-      }
-
-      #logo path:nth-child(23) {
-        stroke-dasharray: 337.59454345703125;
-        stroke-dashoffset: 337.59454345703125;
-      }
-
-      #logo path:nth-child(24) {
-        stroke-dasharray: 359.7347412109375;
-        stroke-dashoffset: 359.7347412109375;
-      }
-
-      #logo path:nth-child(25) {
-        stroke-dasharray: 331.3781433105469;
-        stroke-dashoffset: 331.3781433105469;
-      }
-
-      #logo path:nth-child(26) {
-        stroke-dasharray: 392.85235595703125;
-        stroke-dashoffset: 392.85235595703125;
-      }
-
-      #logo path:nth-child(27) {
-        stroke-dasharray: 350.7519836425781;
-        stroke-dashoffset: 350.7519836425781;
-      }
-
-      #logo path:nth-child(28) {
-        stroke-dasharray: 351.8394775390625;
-        stroke-dashoffset: 351.8394775390625;
-      }
-
-      #logo path:nth-child(29) {
-        stroke-dasharray: 337.19488525390625;
-        stroke-dashoffset: 337.19488525390625;
-      }
-
-      #logo path:nth-child(30) {
-        stroke-dasharray: 534.1046142578125;
-        stroke-dashoffset: 534.1046142578125;
-      }
-
-      #logo path:nth-child(31) {
-        stroke-dasharray: 534.1045532226562;
-        stroke-dashoffset: 534.1045532226562;
-      }
-
-      #logo path:nth-child(32) {
-        stroke-dasharray: 172.8399658203125;
-        stroke-dashoffset: 172.8399658203125;
-      }
-
-      #logo path:nth-child(33) {
-        stroke-dasharray: 255.81396484375;
-        stroke-dashoffset: 255.81396484375;
-      }
-
-      #logo path:nth-child(34) {
-        stroke-dasharray: 314.3462829589844;
-        stroke-dashoffset: 314.3462829589844;
-      }
-
-      #logo path:nth-child(35) {
-        stroke-dasharray: 309.00042724609375;
-        stroke-dashoffset: 309.00042724609375;
-      }
-
-      #logo path:nth-child(36) {
-        stroke-dasharray: 314.347412109375;
-        stroke-dashoffset: 314.347412109375;
-      }
-
-      #logo path:nth-child(37) {
-        stroke-dasharray: 309.00054931640625;
-        stroke-dashoffset: 309.00054931640625;
-      }
-
-      .date {
-        color: #ffffffe3;
-        font-size: 18px;
-        padding: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .line_one_active {
-        animation: fly1 2.3s ease-out forwards 4s;
-      }
-
-      .line_two_active {
-        animation: fly2 2.3s ease-out forwards 4s;
-      }
-    }
-
-    p {
-      line-height: 1.2em;
-    }
-  }
 
   a {
     outline: none;
   }
 
-  &__submain {
+  &__main {
+
+    h1 {
+      font-size: 3.5em;
+      font-weight: 598;
+      line-height: 1.25;
+    }
+  }
+
+  &__tag {
+    font-size: 1.5em;
+    text-transform: lowercase;
+    margin-top: 1em;
+  }
+
+
+  &__button {
     button {
       border: none;
-      border-radius: 10px;
-      color: white;
-      font-weight: 700;
+      border-radius: 5px;
+      color: #000000;
+      font-weight: 500;
       transition: .3s ease-in-out;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 2em;
       padding: 15px 45px;
-      margin-top: 2.5em;
+      margin-top: 1em;
       outline: none;
-      background: rgb(247, 158, 1);
+      background: $summit-light-orange;
       box-shadow: 0px 2px 10px 4px #5946164f,
-      12px 12px 12px 0 #00000008;
+        12px 12px 12px 0 #00000008;
 
 
       &:hover,
       &:after,
       &:focus {
-        background-color: #bb8d1b;
-        color: #ffffffdb;
-        box-shadow: none;
+        background-color: $summit-dark-orange;
       }
     }
   }
-}
 
-.summit-header-host {
-  text-align: center;
-  margin-bottom: 49px;
-  margin-top: 88px;
-
-  :first-child {
+  &__social {
     margin-top: 1em;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.5em;
-    color: #00285b;
-  }
 
-  :last-child {
-    max-width: 640px;
-    margin: 0 auto;
-    margin-bottom: 0px;
-    color: #8d8f9c;
-    line-height: 1.2em;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-  }
-}
+    .social-network {
+      display: flex;
+      max-width: 250px;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
 
-.summit-header-host-card {
-  position: relative;
-  padding: 20px;
-  border-radius: 20px;
-  color: black;
-  background: #00285b;
-  box-shadow: -20px 20px 3px rgba(0, 0, 0, .1);
-  max-width: 370px;
-  margin: 0 auto;
-  height: 100%;
-  margin-top: 15px;
-  text-align: center;
-  min-height: 370px;
-
-  &__title {
-    font-size: 1.2em;
-    font-weight: bold;
-    max-width: 220px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-top: 30px;
-    color: white;
-  }
-
-  &__details {
-    line-height: 19px !important;
-    font-size: 13px;
-    margin-top: 15px;
-    min-height: 114px;
-    color: #ffffffa3;
-  }
-
-  a {
-    text-decoration: none;
-
-    button {
-      border: none;
-      background-color: #fff;
-      box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.35);
+    .icoSocial {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto 0 auto;
       border-radius: 5px;
-      color: #00285b;
-      transition: 0.5s ease-in-out;
-      font-family: "Roboto", sans-serif;
-      font-size: 0.9em;
-      padding: 7px 17px;
-      font-weight: bold;
-      margin-top: 15px;
-      outline: none;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      font-size: 2em;
+      background: #374580;
+      color: #fff;
+
+      i {
+        line-height: 50px;
+      }
 
       &:hover,
       &:after,
       &:focus {
-        background-color: #ffffffd4;
-        padding: 7px 25px;
+        background-color: #323f73;
       }
     }
-  }
 
-  &__number {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border: 2px solid #DBD0D0;
-    border-radius: 50%;
-    padding: 5px;
 
-    p {
-      padding: 0px 4px;
-      color: #DBD0D0;
-    }
+
   }
 }
 
-.summit-header-social {
-  position: absolute;
-  right: 20px;
-  top: 256px;
-  height: 223px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 200;
-}
+.summit-header-illustration {
+  padding-left: 3em;
 
-.active {
-  animation: fill-color 2.5s ease-out forwards 4.8s;
-}
-
-@media (max-width: $breakpoint-lg) {
-  .summit-header-info {
-    padding: 0 50px;
-
-    &__main {
-      font-size: 3em;
-    }
-  }
-
-  .summit-header-social {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: $breakpoint-md) {
-
-  .line {
+  &__img {
     width: 100%;
-  }
-
-  .date {
-    font-size: 15px !important;
-    margin: 0 !important;
-    padding: 3px !important;
-    line-height: 0 !important;
-  }
-
-  .summit-header {
-    &__img {
-      min-height: 650px;
-      max-height: 800px;
-      width: 100%;
-      height: 100vh;
-    }
-  }
-
-  .summit-header-info {
-    padding: 0 100px;
-    top: 1.5em;
-
-    &__main {
-      font-size: 2.5em;
-    }
-  }
-
-  #logo {
-    margin-bottom: -22px !important;
+    height: auto;
   }
 }
 
-@media (max-width: $breakpoint-sm) {
-  .summit-header-info {
-    padding: 0 20px;
+.summit-front-details {
 
-    &__main {
-      font-size: 2.5em;
-    }
-
-    &__submain {
-      button {
-        font-size: 1.8em;
-        padding: 17px 36px;
-      }
-
-      p {
-        font-size: 1.2em;
-      }
-    }
+  // max-width: 479px;
+  p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 0.008em;
+    font-weight: 500;
+    margin-top: 3em;
   }
 
-  .summit-header-host {
-    :first-child {
-      margin-top: 0;
-    }
-
-    :last-child {
-      font-size: 0.9em;
-    }
-  }
 }
 
-@media (max-width: $breakpoint-xsm) {
-  .summit-header-info {
-    padding: 0 20px;
 
-    &__main {
-      font-size: 2em;
-    }
-  }
-
-  button {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: $breakpoint-xxsm) {
-  .summit-header-info {
-    padding: 0 20px;
-
-    &__main {
-      font-size: 1.5em;
-    }
-
-    &__submain {
-      p {
-        line-height: 1em;
-        font-size: 1em;
-      }
-    }
-  }
-}
-
-@keyframes lineMove {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fly1 {
-  from {
-    transform: translateX(0px);
-    width: 0px;
-  }
-
-  to {
-    transform: translateX(-80px);
-    width: 685.75px !important;
-  }
-}
-
-@keyframes fly2 {
-  to {
-    transform: translateX(27px);
-    width: 685.75px;
-  }
-}
-
-@keyframes fill-color {
-  from {
-    fill: transparent;
-  }
-
-  to {
-    fill: #ffffff;
-  }
-}
-
-// fa fa style for social
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 10px 5px;
-}
-
-.social-network a.icoRss:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-}
-
-.social-network a.icoFacebook:hover {
-  background-color: #3B5998;
-}
-
-.social-network a.icoTwitter:hover {
-  background-color: #33ccff;
-}
-
-.social-network a.icoVimeo:hover {
-  background-color: #0590B8;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
-}
-
-.social-network a.icoRss:hover i,
-.social-network a.icoFacebook:hover i,
-.social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i,
-.social-network a.icoVimeo:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-a.socialIcon:hover,
-.socialHoverClass {
-  color: #44BCDD;
-}
-
-.social-circle li a {
-  display: inline-block;
+.figure-drone {
   position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 10%;
-  -webkit-border-radius: 10%;
-  border-radius: 10%;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  font-size: 2em;
+  min-height: 450px;
+  background-color: #ddd;
+  z-index: -1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .summit-drone {
+    background-image: url('../../assets/drone-3191472.jpg');
+    width: calc(100% - 7em);
+    height: 300px;
+    background-size: cover;
+  }
+
+  svg {
+    width: calc(100% - 25em);
+    z-index: -1;
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    right: 3em;
+  }
 }
 
-.social-circle li i {
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-}
+@media (max-width: $breakpoint-lg) {}
 
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotateY(360deg);
-  -webkit-transform: rotateY(360deg);
-  -ms--transform: rotateY(360deg);
-  transform: rotateY(360deg);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
+@media (max-width: $breakpoint-md) {}
 
-.social-circle i {
-  color: #fff;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
+@media (max-width: $breakpoint-sm) {}
+
+@media (max-width: $breakpoint-xsm) {}
+
+@media (max-width: $breakpoint-xxsm) {}
