@@ -1,19 +1,15 @@
 @import "../../../styles/abstracts/variables";
 
 .slash-details {
-  background-image: linear-gradient(to bottom, rgba(0, 42, 90, .92)),
-    url("https://res.cloudinary.com/silva/image/upload/v1581604140/slash-details.JPG");
-  min-height: 355px;
+  background: $summit-dark-blue;
+  min-height: 230px;
   position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
   &__container {
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 4.5em;
     width: 100%;
     text-align: center;
     color: white;
@@ -63,11 +59,11 @@
 
 @media (max-width: $breakpoint-lg) {
   .slash-details {
-    min-height: 600px;
+    min-height: 530px;
 
     &__container {
       flex-direction: column;
-      top: 17%;
+      top: 3;
     }
 
     &__main {

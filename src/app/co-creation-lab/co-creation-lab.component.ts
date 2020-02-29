@@ -10,7 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./co-creation-lab.component.scss']
 })
 export class CoCreationLabComponent implements OnInit {
-  title = 'Virtual Co-creation Group'
+  title = 'Co-creation Lab'
   cocreation_lab = `${environment.baseURL}/cocreation-lab.jpg`;
   office = `${environment.baseURL}/office.jpg`;
   officers = `${environment.baseURL}/officers.jpg`;

@@ -1,3 +1,5 @@
+@import "../../styles/abstracts/variables";
+
 .container-title {
   display: flex;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -66,3 +68,100 @@
     background: #3535F9;
   }
 }
+
+
+
+.summit-social {
+  margin-top: 1em;
+
+  .social-network {
+    display: flex;
+    max-width: 250px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .icoSocial {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    background: #374580;
+    color: #fff;
+
+    i {
+      line-height: 50px;
+    }
+
+    &:hover,
+    &:after,
+    &:focus {
+      background-color: #323f73;
+    }
+  }
+
+
+
+}
+
+@media (max-width: $breakpoint-xl) {
+  .container-title {
+    &__secondary {
+      h2 {
+        font-size: 3.5em;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-lg) {
+  .container-title {
+    &__primary {
+      .summit-line {
+        max-width: 250em;
+      }
+
+      .summit-title {
+        font-size: 2.5em;
+      }
+    }
+
+    &__secondary {
+      h2 {
+        font-size: 2.77em;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container-title {
+    &__primary {
+      .summit-line {
+        max-width: 200px;
+      }
+
+      .summit-title {
+        font-size: 2em;
+        max-width: 330px;
+      }
+    }
+
+    &__secondary {
+      h2 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {}
+
+@media (max-width: $breakpoint-xsm) {}
+
+@media (max-width: $breakpoint-xxsm) {}

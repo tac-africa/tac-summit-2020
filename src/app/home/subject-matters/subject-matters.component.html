@@ -1,25 +1,25 @@
 <section>
   <div class="subject-matters ">
-    <div class="subject-matters__container">
-      <div class="title main-top-container">
+    <div class="container main-top-container">
+      
         <div class="container-title">
-          <div class="container-title__primary">
+          <div class="container-title__primary bk-white">
             <div class="summit-line ln-white"></div>
             <h2 class="summit-title">SCIENTIFIC COMMITTEE</h2>
           </div>
 
-          <div class="container-title__secondary">
+          <div class="container-title__secondary bk-white">
             <h2>SCIENTIFIC COMMITTEE</h2>
           </div>
         </div>
-      </div>
+      
 
-      <div class="container">
+      <div class="subject-matters__container">
         <div class="row" *ngIf="structures">
           <ng-container *ngFor="let structure of structures; let i = index">
             <ng-container *ngIf="structure.structure_level==='Scientific Committe' && i <= 10">
 
-              <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+              <div class="col-lg-4 col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                 <ng-template #content let-modal>
                   <div class="modal-header" style="background: #00285b;">
                     <h4 style="font-weight: bold; color: white" class="modal-title" id="modal-basic-title">

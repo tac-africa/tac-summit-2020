@@ -2,7 +2,7 @@
 
 
 .summit-header {
-  min-height: 815px;
+  min-height: 800px;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -15,7 +15,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 10em;
+    top: 14em;
     display: flex;
 
     .row {
@@ -25,7 +25,7 @@
       .drone-icon {
         height: 150px;
         position: absolute;
-        right: -85px;
+        right: -80px;
         top: -58px;
       }
     }
@@ -80,42 +80,6 @@
     }
   }
 
-  &__social {
-    margin-top: 1em;
-
-    .social-network {
-      display: flex;
-      max-width: 250px;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-
-    .icoSocial {
-      display: inline-block;
-      position: relative;
-      margin: 0 auto 0 auto;
-      border-radius: 5px;
-      text-align: center;
-      width: 50px;
-      height: 50px;
-      font-size: 2em;
-      background: #374580;
-      color: #fff;
-
-      i {
-        line-height: 50px;
-      }
-
-      &:hover,
-      &:after,
-      &:focus {
-        background-color: #323f73;
-      }
-    }
-
-
-
-  }
 }
 
 .summit-header-illustration {
@@ -153,14 +117,14 @@
 
 
   .summit-drone {
-    background-image: url('../../assets/drone-3191472.jpg');
+    background-image: url('https://res.cloudinary.com/silva/image/upload/v1582919119/manflyingdrone-min.jpg');
     width: calc(100% - 7em);
     height: 300px;
     background-size: cover;
   }
 
   svg {
-    width: calc(100% - 25em);
+    width: 8.8em;
     z-index: -1;
   }
 
@@ -173,16 +137,159 @@
   .bottom {
     position: absolute;
     bottom: 0;
-    right: 3em;
+    right: 3.5em;
   }
 }
 
-@media (max-width: $breakpoint-lg) {}
+@media (max-width: $breakpoint-lg) {
+  .summit-header-illustration {
+    position: absolute;
+    min-width: 90%;
 
-@media (max-width: $breakpoint-md) {}
+    &__img {
+      opacity: .45;
+    }
+  }
 
-@media (max-width: $breakpoint-sm) {}
+  .summit-header-info {
+    min-width: 100%;
+  }
 
-@media (max-width: $breakpoint-xsm) {}
+  .drone-icon {
+    opacity: .2;
+  }
 
-@media (max-width: $breakpoint-xxsm) {}
+  .summit-header {
+    min-height: 750px;
+
+    &__container {
+      .row {
+        .drone-icon {
+          right: 0px;
+          top: -116px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .summit-header-info {
+
+    &__main {
+
+      h1 {
+        font-weight: 900;
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .figure-drone {
+    .summit-drone {
+      width: calc(100% - 2.5em);
+    }
+
+    .bottom {
+      right: 1.3em;
+    }
+  }
+
+  .summit-front-details {
+
+    // max-width: 479px;
+    p {
+      font-size: .99em;
+      line-height: 1.5em;
+    }
+
+  }
+
+  .summit-header {
+    &__container {
+      .row {
+        .drone-icon {
+          right: 40px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: $breakpoint-sm) {
+  .summit-header {
+    min-height: 560px;
+
+    &__container {
+      top: 10em;
+    }
+
+  }
+
+  .summit-header-info {
+
+    &__main {
+
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xsm) {
+  .summit-header-info {
+    &__button {
+      button {
+        font-size: 1.22em;
+        margin-top: 2.5em;
+      }
+
+    }
+  }
+
+  .summit-social {
+    .social-network {
+      max-width: 185px;
+      padding: 0;
+    }
+
+    .icoSocial {
+      width: 40px;
+      height: 40px;
+      font-size: 1.33em;
+    } 
+
+    i {
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xxsm) {
+  .figure-drone {
+    .summit-drone {
+      width: 100%;
+    }
+
+    .bottom {
+      right: 0;
+    }
+  }
+
+  .summit-header-info {
+
+    &__main {
+
+      h1 {
+        font-weight: 900;
+        font-size: 2em;
+        letter-spacing: -0.039em;
+        line-height: 1.3;
+      }
+    }
+  }
+}

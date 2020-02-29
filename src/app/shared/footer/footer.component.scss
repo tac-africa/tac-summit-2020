@@ -1,22 +1,32 @@
 @import "../../../styles/abstracts/variables";
 
+.summit-footer-top {
+  background: $summit-light-blue;
+  min-height: 350px;
+  display: flex;
+  position: relative;
+}
+
 .summit-footer {
   background: $summit-dark-blue;
-  min-height: 522px;
+  color: #dddddd;
+  display: flex;
   position: relative;
 
   &__main {
-    position: absolute;
-    top: 140px;
-    left: 0;
     width: 100%;
-    text-align: center;
-    color: white;
+    margin-bottom: 2em;
+    margin-top: .55em;
+
+    font-size: .99em;
   }
+
 }
 
 .footer-inner {
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
   &__socials {
     margin-top: 50px;
@@ -28,7 +38,7 @@
     justify-content: center;
 
     a {
-      color: white;
+      color: #dddddd;
       margin-left: 10px;
       text-decoration: none;
     }
@@ -36,25 +46,26 @@
 
 }
 
-.contact-fa-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.summit-newsletter {
+  max-width: 700px;
+  border: 1px solid black;
+  border-radius: 5px;
 
-  i {
-    font-size: 30px;
-    margin-right: 10px;
-    min-width: 52px;
-  }
+  margin: 0 auto;
+  top: -150px;
+  background: #fff;
 }
 
 
-
+.summit-social .icoSocial {
+  width: 35px;
+  height: 41px;
+  font-size: 1em;
+  border-radius: 1px;
+  margin-left: 10px;
+}
 
 @media (max-width: $breakpoint-md) {
-
-  .footer-inner {
-  }
 
   .summit-footer {
     &__main {
@@ -62,4 +73,11 @@
     }
   }
 
+}
+
+@media (max-width: $breakpoint-sm) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }

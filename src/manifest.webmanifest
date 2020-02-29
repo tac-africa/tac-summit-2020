@@ -2,8 +2,8 @@
   "name": "TAC Summit",
   "short_name": "TAC Summit",
   "start_url": "./",
-  "theme_color": "#00285b",
-  "background_color": "#00285b",
+  "theme_color": "#374580",
+  "background_color": "#374580",
   "display": "standalone",
   "description": "TAC Africa drone summit",
   "icons": [{

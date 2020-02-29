@@ -1,66 +1,20 @@
 @import '../../../styles/abstracts/variables';
 
 .subject-matters {
-  min-height: 1300px;
-  height: 90vh;
   position: relative;
   background: $summit-dark-blue;
 
   &__container {
-    position: absolute;
-    top: 0;
     width: 100%;
     text-align: center;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 100px;
   }
 
 
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 5px;
-
-
-  .primary-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 10px;
-
-    div {
-      width: 30px;
-      height: 4px;
-      background-color: white;
-    }
-  }
-
-
-  h3 {
-    color: white;
-    font-size: 1.7em;
-    text-align: center;
-    font-weight: 900;
-    padding: 0 5px;
-  }
-
-  p {
-    max-width: 640px;
-    margin: 0 auto;
-    margin-bottom: 0px;
-    color: white;
-    line-height: 1.08em;
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 15px;
-  }
 }
 
 .expert-card {
@@ -130,20 +84,7 @@
 }
 
 @media (max-width: 1200px) and (min-width: 991px) {
-  .expert-card {
-    min-height: 364px !important;
 
-    &__img {
-      height: 210px !important;
-      width: 210px !important;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-lg) {
-  .subject-matters {
-    min-height: 4080px;
-  }
 }
 
 @media (max-width: $breakpoint-sm) {
