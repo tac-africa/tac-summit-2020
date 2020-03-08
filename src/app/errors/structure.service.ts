@@ -35,11 +35,11 @@ export class StructureService {
   },
   {
     "id": 4,
-    "name": "Mark Bond",
-    "image": "https://res.cloudinary.com/silva/image/upload/v1581604140/mark-bond.png",
-    "title": "Principal Consultant The Institute for Drone Technology, Australia. Member INTERPOL Drone Expert Forum",
+    "name": "Orville McCalla",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1581604140/Orville-McCalla.png",
+    "title": "CEO/President AeroStream Consulting Inc, Canada .",
     "structure_level": "Scientific Committe",
-    "bio": "Mark Bond started his career as an Australian Army Officer, holding command postings in both infantry, and special Forces.  After his carrer in Defence he ran a number of porjects in Iraq prividing private military security consultancy advise to the US Department of Counter Terrorism Special Operations, the Iraqi National Parliament and the US Army Corps of Engineers.  Since his time in Iraq Mark has been providing specialist consulting advice on enterprise management systems across a number of industries.Mark is the Institute for Drone Technology’s Principal Consultant where his primary focus is on the development and implementation of best practices frameworks, developing documentation, technical writing and implementation, reviewing and testing drone operations.Prior to starting at the Institute for Drone Technology, Mark provided consulting advice on Private Military Operations.  Business Resilience, Corporate Security Management, Training consulting and Travel Security."
+    "bio": "As CEO and President of AeroStream Consulting Inc., Orville McCalla has more than 15 years’ experience in the aviation industry, delivering solutions from the ground up to sustainable operations. Orville is a personable, highly motivated and results-oriented individual with strong commitment to safety and excellence. Orville has held positions such as Director, Business Development & Client Relations, Associate Business Development Manager, Aeronautical Analyst, and Technical Records Administrator. He has progressive thought leadership and is known for his ability to think outside the box, to find solutions to complex challenges, and sustainable business relationships.Orville is keen on fostering healthy, sustainable business relationships, and has successfully developed and implemented business campaigns penetrating new markets, successfully re-established business relationships, and fostered strategic partnerships that are directly linked to client’s Key Performance Indicators (KPIs).Orville has worked with airlines in North America including Canada, as well as airlines in Africa, assisting with maintaining compliance with civil aviation regulations and other regulatory authorities. He holds a private pilot’s licence, a diploma in Aviation Operations and has obtained his Quality Systems Auditor certificate from the Canadian Council for Aviation and Aerospace.”"
   },
   {
     "id": 5,
@@ -91,14 +91,6 @@ export class StructureService {
   },
   {
     "id": 11,
-    "name": "Orville McCalla",
-    "image": "https://res.cloudinary.com/silva/image/upload/v1581604140/Orville-McCalla.png",
-    "title": "CEO/President AeroStream Consulting Inc, Canada .",
-    "structure_level": "Scientific Committe",
-    "bio": "As CEO and President of AeroStream Consulting Inc., Orville McCalla has more than 15 years’ experience in the aviation industry, delivering solutions from the ground up to sustainable operations. Orville is a personable, highly motivated and results-oriented individual with strong commitment to safety and excellence. Orville has held positions such as Director, Business Development & Client Relations, Associate Business Development Manager, Aeronautical Analyst, and Technical Records Administrator. He has progressive thought leadership and is known for his ability to think outside the box, to find solutions to complex challenges, and sustainable business relationships.Orville is keen on fostering healthy, sustainable business relationships, and has successfully developed and implemented business campaigns penetrating new markets, successfully re-established business relationships, and fostered strategic partnerships that are directly linked to client’s Key Performance Indicators (KPIs).Orville has worked with airlines in North America including Canada, as well as airlines in Africa, assisting with maintaining compliance with civil aviation regulations and other regulatory authorities. He holds a private pilot’s licence, a diploma in Aviation Operations and has obtained his Quality Systems Auditor certificate from the Canadian Council for Aviation and Aerospace.”"
-  },
-  {
-    "id": 12,
     "name": "Yong LI",
     "image": "https://res.cloudinary.com/silva/image/upload/v1581604140/young-li.jpg",
     "title": "CEO-Clear Sky UAV Security Management and consulting, China",

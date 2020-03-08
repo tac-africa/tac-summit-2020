@@ -1,38 +1,58 @@
-
 <section>
-  <div class="summit-footer">
-
-    <div class="summit-footer__main main-top-container container">
-
-
-      <div class="footer-inner">
-
-        <div class="footer-inner__menu">
-          <a [routerLink]="['about']">
-            <p>About | </p>
-          </a>
-          <a [routerLink]="['cocreation-lab']">
-            <p>Co-creation Lab | </p>
-          </a>
-          <a [routerLink]="['coming-soon']">
-            <p>Register</p>
-          </a>
+  <!----------- Footer ------------>
+  <footer class="footer-bs">
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+          <img class="img-fluid" width="100%" src="https://cdn.tacafrica.org/assets/img/full-logo.png" alt="summit logo"
+            srcset="">
         </div>
-
-        <div class="footer-inner summit-social">
-          <ul class="social-network">
-            <li><a href="https://web.facebook.com/tacafrica.org/" class="icoSocial" title="Facebook"><i
-                  class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/29341224/" class="icoSocial" title="Linkedin"><i
-                  class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/technologyagainstcrime/" class="icoSocial" title="Instagram"><i
-                  class="fa fa-instagram"></i></a></li>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+          <h4>Contact —</h4>
+          <ul class="list">
+            <li><a [routerLink]="['about']">About Us</a></li>
+            <li><a [routerLink]="['cocreation-lab']">Co-creation Lab</a></li>
+            <li><a [routerLink]="['coming-soon']">Register</a></li>
           </ul>
         </div>
+        <div class="col-md-4 footer-ns animated fadeInRight">
+          <h4>Newsletter —</h4>
+          <p>Get Latest update about the summit</p>
+          <form class="input-group" style="width: 100% !important;"
+            action="https://gmail.us3.list-manage.com/subscribe/post" method="POST">
+            <input type="hidden" name="u" value="038c1715bf376fc537c5e493a">
+            <input type="hidden" name="id" value="148db2c99c">
 
-
+            <input type="email" class="form-control" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0"
+              size="25" value="">
+            <input type="submit" class="formEmailButton btn btn-default" style="background: #374580;color: white;"
+              name="submit" value="Subscribe">
+          </form>
+          <!-- /input-group -->
+        </div>
       </div>
 
+
+      <div class="row footer-last">
+        <div class="col-md-6 copyright ">
+          <p>© 2020 TAC Drone Summit - All rights reserved</p>
+        </div>
+        <div class="col-md-6 media-links">
+          <a href="https://twitter.com/techdroneng?s=20" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/29341224/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://web.facebook.com/tacafrica.org/" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/technologyagainstcrime/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+
+  </footer>
 </section>

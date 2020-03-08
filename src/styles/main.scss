@@ -37,9 +37,9 @@
 .btn-outline {
   font-size: 1.3em;
   margin-top: 1.8em;
-  border: .13em solid #3535f9;
+  border: .13em solid $summit-light-blue;
   outline: none;
-  color: #3535f9;
+  color: $summit-light-blue;
   padding: .55em 1.55em;
 }
 
@@ -54,5 +54,9 @@
   &:hover {
     color: #ffffff7d
   }
+}
+
+.owl-carousel.owl-drag .owl-item {
+  overflow: hidden;
 }
 
